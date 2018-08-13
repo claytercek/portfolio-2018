@@ -1,0 +1,41 @@
+$darkPurple: #231549;
+$lightPurple: #7225a0;
+$pink: #f82aaa;
+$blue: #0abac7;
+$yellow: #fad74a;
+$white: #fff;
+
+@import "fonts";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: $darkPurple;
+}
+
+body {
+	width: 90%;
+	min-height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	max-width: 1440px;
+}
+
+div.content {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	width: 100%;
+	height: 100%;
+}
+@import "general";
+@import "works";
+@import "header";
+
+// 788 x 470

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Scroll Portfolio</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div class="bg"></div>
+		<a id="logo" href="index.html">
+			<h2>Clay Tercek</h2>
+		</a>
+		<a class="active page" href="portfolio.html">
+			<h2>Portfolio</h2>
+		</a>
+		<a class="page" href="experience.html">
+			<h2>Experience</h2>
+		</a>
+		<a class="page" href="videos.html">
+			<h2>Videos</h2>
+		</a>
+		<a class="page" href="about.html">
+			<h2>About</h2>
+		</a>
+		<a id="search" href="#">
+			<h2>Search</h2>
+		</a>
+		<img class="menuIcon" src="./imgs/menuIcon.svg" alt="menu">
+
+		<div id="overlay">
+			<a class="active " href="portfolio.html">
+				<h2>Portfolio</h2>
+			</a>
+			<a class="" href="experience.html">
+				<h2>Experience</h2>
+			</a>
+			<a class="" href="videos.html">
+				<h2>Videos</h2>
+			</a>
+			<a class="" href="about.html">
+				<h2>About</h2>
+			</a>
+		</div>
+		<img class="closeIcon" src="./imgs/exitIcon.svg" alt="exit">
+	</header>
+
+	<div class="content">
+		<main>
+			<div class="work is-active">
+				<div class="yellow"></div>
+				<div class="pink"></div>
+				<div class="imgWrapper">
+					<img src="imgs/portfolio/poster.png" alt="image">
+					<div class="animContainer"></div>
+				</div>
+				<div class="blue">
+					<h3>Interactive Poster</h3>
+					<p>Final project from Interactive Graphics. An interactive gig poster for a wilco concert using SVGs and javascript to create playful interactions.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="work ">
+				<div class="yellow"></div>
+				<div class="pink"></div>
+				<div class="imgWrapper">
+					<img src="imgs/portfolio/appetite.png" alt="image">
+					<div class="animContainer"></div>
+				</div>
+				<div class="blue">
+					<h3>Appetite</h3>
+					<p>Final project from Scripting II. Recipe website demonstrating skills in PHP, MySQL, and designing for a database.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="work">
+				<div class="yellow"></div>
+				<div class="pink"></div>
+				<div class="imgWrapper">
+					<img src="imgs/portfolio/AV.png" alt="image">
+					<div class="animContainer"></div>
+				</div>
+				<div class="blue">
+					<h3>AV Club Redesign</h3>
+					<p>Final project from User Interface Design II. Ten weeks of work involving wireframing, color systems, and heuristic evaluations resulting in a high fidelity responsive prototype made with UXPin.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="work ">
+				<div class="yellow"></div>
+				<div class="pink"></div>
+				<div class="imgWrapper">
+					<img src="imgs/portfolio/MTA.png" alt="image">
+					<div class="animContainer"></div>
+				</div>
+				<div class="blue">
+					<h3>MTA Redesign</h3>
+					<p>Final project from User Interface Design I. A high fidelity prototype made in Invision. The result of ten weeks of work involving wireframing, usabilty testing, color systems, and more.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="work">
+				<div class="yellow"></div>
+				<div class="pink"></div>
+				<div class="imgWrapper">
+					<img src="imgs/portfolio/Zodiac.png" alt="image">
+					<div class="animContainer"></div>
+				</div>
+				<div class="blue">
+					<h3>Zodiac</h3>
+					<p>Final project from Scripting I. A responsive site that returns a Jazz Artist based on the users birthday. The result of a ten week course focusing in javascript.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</main>
+		<aside class="work-subnav">
+			<div class="link is-active">
+				<span>1</span>
+				<div class="bg"></div>
+				<span>5</span>
+			</div>
+			<div class="link">
+				<span>2</span>
+				<div class="bg"></div>
+				<span>5</span>
+			</div>
+			<div class="link">
+				<span>3</span>
+				<div class="bg"></div>
+				<span>5</span>
+			</div>
+			<div class="link">
+				<span>4</span>
+				<div class="bg"></div>
+				<span>5</span>
+			</div>
+			<div class="link">
+				<span>5</span>
+				<div class="bg"></div>
+				<span>5</span>
+			</div>
+		</aside>
+		<div class="nav-arrows">
+			<img src="imgs/nav-up.svg" alt="up">
+			<img src="imgs/nav-down.svg" alt="down">
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="js/js_dependencies/SplitText.min.js"></script>
+	<script src="js/js_dependencies/jquery.touchSwipe.min.js"></script>
+	<script src="js/js_dependencies/jquery.mousewheel.min.js"></script>
+	<script src="js/js_dependencies/lottie.js"></script>
+	<script src="js/verticalNav.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+
+</html>

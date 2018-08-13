@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 832 516" style="enable-background:new 0 0 832 516;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#FAD74A;}
+	.st3{fill:url(#YellowDots_2_);}
+	.st4{fill:#F82AAA;}
+	.st5{fill:url(#PinkDots_2_);}
+	.st6{opacity:0.33;}
+	.st7{fill:#7225A0;}
+	.st8{fill:#0ABAC7;}
+</style>
+<pattern  x="78" y="103" width="20" height="20" patternUnits="userSpaceOnUse" id="Whide_square_grid" viewBox="1.5 -21.5 20 20" style="overflow:visible;">
+	<g>
+		<rect x="1.5" y="-21.5" class="st0" width="20" height="20"/>
+		<path class="st1" d="M16.5,0L16.5,0C15.7,0,15-0.7,15-1.5v0C15-2.3,15.7-3,16.5-3h0C17.3-3,18-2.3,18-1.5v0C18-0.7,17.3,0,16.5,0z
+			"/>
+		<path class="st1" d="M6.5,0L6.5,0C5.7,0,5-0.7,5-1.5v0C5-2.3,5.7-3,6.5-3h0C7.3-3,8-2.3,8-1.5v0C8-0.7,7.3,0,6.5,0z"/>
+		<path class="st1" d="M21.5-10L21.5-10c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5h0c0.8,0,1.5,0.7,1.5,1.5v0
+			C23-10.7,22.3-10,21.5-10z"/>
+		<path class="st1" d="M11.5-10L11.5-10c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5h0c0.8,0,1.5,0.7,1.5,1.5v0
+			C13-10.7,12.3-10,11.5-10z"/>
+		<path class="st1" d="M1.5-10L1.5-10C0.7-10,0-10.7,0-11.5v0C0-12.3,0.7-13,1.5-13h0C2.3-13,3-12.3,3-11.5v0C3-10.7,2.3-10,1.5-10z
+			"/>
+		<path class="st1" d="M16.5-20L16.5-20c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5h0c0.8,0,1.5,0.7,1.5,1.5v0
+			C18-20.7,17.3-20,16.5-20z"/>
+		<path class="st1" d="M6.5-20L6.5-20C5.7-20,5-20.7,5-21.5v0C5-22.3,5.7-23,6.5-23h0C7.3-23,8-22.3,8-21.5v0C8-20.7,7.3-20,6.5-20z
+			"/>
+	</g>
+</pattern>
+<g id="Yellow_1_">
+	<polygon id="Yellow" class="st2" points="210.3,40.5 137.3,147.1 47.2,47.6 	"/>
+</g>
+<g id="YellowDots_1_">
+	
+		<pattern  id="YellowDots_2_" xlink:href="#Whide_square_grid" patternTransform="matrix(-0.1902 -0.7115 0.7115 -0.1902 -3972.2317 -14828.5898)">
+	</pattern>
+	<polygon id="YellowDots" class="st3" points="225.1,42.2 162.2,155.1 63.3,64.3 	"/>
+</g>
+<g id="Pink_1_">
+	<polygon id="Pink" class="st4" points="706.3,389.5 700.3,488.5 122.3,484.5 103.8,425 	"/>
+</g>
+<g id="PinkDots_1_">
+	<pattern  id="PinkDots_2_" xlink:href="#Whide_square_grid" patternTransform="matrix(1 0 0 1 3.7786 2)">
+	</pattern>
+	<polygon id="PinkDots" class="st5" points="690.4,372.7 686.7,471.8 108.7,480.9 88.9,421.8 	"/>
+</g>
+<g id="MainRectangle_1_">
+	<g id="MainRectangle">
+		<g class="st6">
+			<rect x="33.9" y="100.3" class="st7" width="626" height="354"/>
+		</g>
+		<g>
+			<rect x="43" y="90" class="st1" width="626" height="354"/>
+		</g>
+	</g>
+</g>
+<g id="blueRec_1_">
+	<g id="blueRec">
+		<g>
+			<g class="st6">
+				<polygon class="st7" points="814,27.5 545.4,55 534.6,276.6 770.5,272.4 				"/>
+			</g>
+			<polygon class="st8" points="822,18.5 553.4,46 542.6,267.6 778.5,263.4 			"/>
+		</g>
+	</g>
+</g>
+</svg>
