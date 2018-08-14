@@ -1,0 +1,91 @@
+main.search {
+	padding-bottom: 2rem;
+	max-width: 40rem;
+	margin: auto;
+	font-family: GTWalsheimPro, sans-serif;
+	font-weight: 300;
+	color: white;
+
+	h1 {
+		color: white;
+		margin: 0;
+		margin-bottom: 3rem;
+	}
+
+	h2::after {
+		content: "";
+		width: 80px;
+		height: 6px;
+		left: 0;
+		position: absolute;
+		bottom: -0.9rem;
+		background: url("../imgs/underline-01.svg") repeat-x;
+	}
+
+	h2 {
+		position: relative;
+		color: white;
+		font-weight: 300;
+		margin: 1rem 0;
+		font-size: 1.6rem;
+	}
+
+	.result {
+		display: block;
+		margin: 2rem 0;
+		text-decoration: none;
+		color: unset;
+
+		h3 {
+			display: inline;
+			font-weight: 500;
+			color: $pink;
+		}
+		h4 {
+			display: inline;
+			margin: 0;
+			font-weight: 200;
+			color: $yellow;
+			margin-left: 0.5rem;
+			font-size: 1.3rem;
+		}
+
+		p {
+			margin: 0.5rem 0;
+			font-size: 1.125rem;
+			font-weight: 200;
+		}
+	}
+
+	.page {
+		justify-content: center;
+		display: flex;
+		margin-top: 3rem;
+		img {
+			width: 60px;
+			margin: 0.5rem;
+		}
+		h5 {
+			margin: 0.5rem;
+			font-size: 1.125rem;
+			font-weight: 200;
+		}
+
+		.active {
+			color: $blue;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	main.search {
+		padding-top: 4rem;
+	}
+	main.search .result {
+		h3,
+		h4 {
+			display: block;
+			margin: 0;
+		}
+	}
+}

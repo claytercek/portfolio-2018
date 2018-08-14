@@ -223,11 +223,16 @@ aside.work-subnav {
 			width: 40%;
 			height: fit-content;
 			right: 0%;
-			padding: 6% 8% 8% 6%;
+			padding: 5%;
+			// padding: 6% 8% 8% 6%;
 			max-width: unset;
 			min-width: 22rem;
 			min-height: 19rem;
 			height: 60%;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
 			p,
 			a {
 				font-size: 1rem;
@@ -235,6 +240,8 @@ aside.work-subnav {
 			}
 			a {
 				padding: 0.1rem 0.3rem;
+				width: 6rem;
+				text-align: center;
 			}
 		}
 		.imgWrapper {

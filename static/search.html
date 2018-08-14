@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Search</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div class="bg"></div>
+		<a id="logo" href="index.html">
+			<h2>Clay Tercek</h2>
+		</a>
+		<a class="active page" href="portfolio.html">
+			<h2>Portfolio</h2>
+		</a>
+		<a class="page" href="experience.html">
+			<h2>Experience</h2>
+		</a>
+		<a class="page" href="videos.html">
+			<h2>Videos</h2>
+		</a>
+		<a class="page" href="about.html">
+			<h2>About</h2>
+		</a>
+		<a id="search" href="#">
+			<h2>Search</h2>
+		</a>
+		<img class="menuIcon" src="./imgs/menuIcon.svg" alt="menu">
+
+		<div id="overlay">
+			<a class="active " href="portfolio.html">
+				<h2>Portfolio</h2>
+			</a>
+			<a class="" href="experience.html">
+				<h2>Experience</h2>
+			</a>
+			<a class="" href="videos.html">
+				<h2>Videos</h2>
+			</a>
+			<a class="" href="about.html">
+				<h2>About</h2>
+			</a>
+		</div>
+		<img class="closeIcon" src="./imgs/exitIcon.svg" alt="exit">
+	</header>
+
+	<div class="content">
+		<main class="search">
+			<div>
+				<h2>Search Results for</h2>
+				<h1>Project</h1>
+			</div>
+			<div>
+				<a href="#" class="result">
+					<h3>Interactive Poster</h3>
+					<h4>05.09.2018</h4>
+					<p>Final project from Interactive Graphics. An interactive gig poster for a wilco concert using SVGs and javascript to create playful interactions.</p>
+				</a>
+				<a href="#" class="result">
+					<h3>Appetite</h3>
+					<h4>02.04.2018</h4>
+					<p>Final project from Scripting II. Recipe website demonstrating skills in PHP, MySQL, and designing for a database.</p>
+				</a>
+				<a href="#" class="result">
+					<h3>AV Club Redesign</h3>
+					<h4>05.09.2018</h4>
+					<p>Final project from User Interface Design II. Ten weeks of work involving wireframing, color systems, and heuristic evaluations resulting in a high fidelity responsive prototype made with UXPin.</p>
+				</a>
+				<a href="#" class="result">
+					<h3>MTA Redesign</h3>
+					<h4>02.04.2018</h4>
+					<p>Final project from User Interface Design I. A high fidelity prototype made in Invision. The result of ten weeks of work involving wireframing, usabilty testing, color systems, and more.</p>
+				</a>
+				<a href="#" class="result">
+					<h3>Zodiac</h3>
+					<h4>02.04.2018</h4>
+					<p>Final project from Scripting I. A responsive site that returns a Jazz Artist based on the users birthday. The result of a ten week course focusing in javascript.</p>
+				</a>
+			</div>
+			<div class="page">
+				<img src="imgs/ArrowLeft.svg" alt="ArrowLeft">
+				<h5 class- "active">1</h5>
+				<h5>2</h5>
+				<h5>3</h5>
+				<h5>4</h5>
+				<h5>5</h5>
+				<img src="imgs/ArrowRight.svg" alt="ArrowRight">
+			</div>
+		</main>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+
+</html>

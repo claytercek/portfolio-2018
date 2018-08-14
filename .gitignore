@@ -17,5 +17,6 @@ mockups
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+*cache*
 .DS_Store
 

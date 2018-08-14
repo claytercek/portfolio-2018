@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Single</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div class="bg"></div>
+		<a id="logo" href="index.html">
+			<h2>Clay Tercek</h2>
+		</a>
+		<a class="active page" href="portfolio.html">
+			<h2>Portfolio</h2>
+		</a>
+		<a class="page" href="experience.html">
+			<h2>Experience</h2>
+		</a>
+		<a class="page" href="videos.html">
+			<h2>Videos</h2>
+		</a>
+		<a class="page" href="about.html">
+			<h2>About</h2>
+		</a>
+		<a id="search" href="#">
+			<h2>Search</h2>
+		</a>
+		<img class="menuIcon" src="./imgs/menuIcon.svg" alt="menu">
+
+		<div id="overlay">
+			<a class="active " href="portfolio.html">
+				<h2>Portfolio</h2>
+			</a>
+			<a class="" href="experience.html">
+				<h2>Experience</h2>
+			</a>
+			<a class="" href="videos.html">
+				<h2>Videos</h2>
+			</a>
+			<a class="" href="about.html">
+				<h2>About</h2>
+			</a>
+		</div>
+		<img class="closeIcon" src="./imgs/exitIcon.svg" alt="exit">
+	</header>
+
+	<div class="content">
+		<main class="single">
+			<div class="hero">
+				<div class="blue"></div>
+				<div class="img" style="background-image: url('imgs/portfolio/poster.png')"></div>
+				<div class="title">Interactive Poster</div>
+			</div>
+			<div class="info">
+				<div class="links">
+					<a href="">LAUNCH SITE</a>
+					<a href=""> VIEW CODE</a>
+				</div>
+				<div>
+					<h3>Goal:</h3>
+					<p>In my Interactive Graphics class I was challenged to create an online interactive gig poster for an upcoming concert using SVG animation and javascript. The poster had to be responsive and scalable.</p>
+				</div>
+				<div>
+					<h3>Answer:</h3>
+					<p>I chose to design my poster for an upcoming Wilco concert in chicago. I created an interactive TV with toggleable channels and volume, each channel showing a video from beeple-crap.com.
+					</p>
+				</div>
+				<div>
+					<div>
+						<h3>Deliverables</h3>
+						<p>Visual Design</p>
+						<p>Development</p>
+					</div>
+					<div>
+						<h3>Year:</h3>
+						<p>2018</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+
+</html>

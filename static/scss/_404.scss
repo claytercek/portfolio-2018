@@ -1,0 +1,35 @@
+main.page404 {
+	height: 100%;
+	font-family: GTWalsheimPro, sans-serif;
+
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 400px;
+	}
+	h1 {
+		color: white;
+		margin: 0;
+		margin-bottom: 3rem;
+	}
+
+	h2::after {
+		content: "";
+		width: 80px;
+		height: 6px;
+		left: 0;
+		position: absolute;
+		bottom: -0.9rem;
+		background: url("../imgs/underline-01.svg") repeat-x;
+	}
+
+	h2 {
+		position: relative;
+		color: white;
+		font-weight: 300;
+		margin: 1rem 0;
+		font-size: 1.6rem;
+	}
+}

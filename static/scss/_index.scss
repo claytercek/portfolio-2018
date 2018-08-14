@@ -1,0 +1,100 @@
+div.home {
+	max-width: 960px;
+	max-height: 650px;
+	width: 100%;
+	height: 60vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	* {
+		position: absolute;
+	}
+	h1 {
+		display: inline-block;
+		font-family: GTWalsheimPro, sans-serif;
+		font-weight: 800;
+		color: white;
+		text-shadow: 0.5rem 0.5rem #23154955;
+		font-size: 17vw;
+		margin: 0;
+	}
+
+	h1:first-of-type {
+		top: 18%;
+		left: 2%;
+	}
+
+	h1:last-of-type {
+		bottom: 13%;
+		right: 3%;
+	}
+
+	.yellow {
+		background: url("../imgs/index/yellow.svg") top left no-repeat;
+		height: 50%;
+		width: 30%;
+		top: 5%;
+	}
+
+	.pink {
+		background: url("../imgs/index/pink.svg") top right no-repeat;
+		height: 70%;
+		width: 57%;
+		top: 0%;
+		right: 8%;
+	}
+
+	.blue {
+		background: url("../imgs/index/blue.svg") bottom right no-repeat;
+		height: 40%;
+		width: 90%;
+		bottom: 0%;
+		right: 0%;
+	}
+
+	.dots {
+		background: url("../imgs/index/dots.svg") bottom right no-repeat;
+		height: 40%;
+		width: 26%;
+		bottom: 15%;
+		right: 5%;
+	}
+
+	#eye {
+		width: 45%;
+		right: 15%;
+		top: 10%;
+		transform: rotate(-7deg);
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	div.home h1 {
+		font-size: 180px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	div.home {
+		height: 70vw;
+
+		h1 {
+			font-size: 19vw;
+		}
+
+		.yellow {
+			top: 18%;
+			left: 5%;
+			transform: rotate(25deg);
+		}
+
+		.pink {
+			transform: rotate(-10deg);
+			right: 2%;
+			width: 60%;
+			top: 5%;
+		}
+	}
+}

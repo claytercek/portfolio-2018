@@ -11,12 +11,15 @@ header {
 		position: fixed;
 		left: 0;
 		right: 0;
-		height: 6rem;
+		height: 4rem;
 	}
 
 	position: fixed;
-	width: inherit;
-	max-width: inherit;
+	top: 0;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 1440px;
 	z-index: 20;
 	display: flex;
 
@@ -109,6 +112,7 @@ header {
 
 header #overlay {
 	position: fixed;
+	height: 100vh;
 	top: 0px;
 	left: 0px;
 	right: 0px;
@@ -140,6 +144,17 @@ header #overlay {
 }
 
 @media screen and (min-width: 768px) {
+	.menuIcon {
+		top: -3rem;
+		opacity: 0;
+	}
+
+	header a:not(#logo) {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 1600px) {
 	.menuIcon {
 		top: -3rem;
 		opacity: 0;
