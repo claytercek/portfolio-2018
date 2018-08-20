@@ -1,0 +1,264 @@
+$darkPurple: #231549;
+$lightPurple: #7225a0;
+$pink: #f82aaa;
+$blue: #0abac7;
+$yellow: #fad74a;
+$white: #fff;
+div.work.is-active {
+	visibility: visible;
+}
+
+div.work {
+	width: 90%;
+	height: 75vh;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	.blue {
+		background: $blue;
+		position: absolute;
+		width: 85%;
+		top: 10%;
+		right: 0;
+		box-shadow: -0.5rem 0.5rem #7225a055;
+		padding: 5%;
+		h3 {
+			color: $white;
+			font-size: 1.5rem;
+			font-weight: Bold;
+			font-family: GTWalsheimPro, sans-serif;
+			margin: 0;
+		}
+		p {
+			color: $white;
+			font-size: 1rem;
+			font-weight: 300;
+			font-family: GTWalsheimPro, sans-serif;
+			line-height: 1.3;
+		}
+		a {
+			border: 2px solid $white;
+			color: $white;
+			font-size: 1rem;
+			font-weight: 300;
+			font-family: GTWalsheimPro, sans-serif;
+			text-decoration: none;
+			line-height: 1.3;
+			padding: 0.1rem 0.2rem;
+		}
+	}
+	.yellow {
+		background: url("../imgs/yellow_noDots.svg") no-repeat center top;
+		position: absolute;
+		width: 40%;
+		height: 30%;
+		top: 5%;
+	}
+	.pink {
+		background: url("../imgs/pink_noDots.svg") no-repeat bottom right;
+		position: absolute;
+		width: 95%;
+		height: 20%;
+		bottom: 0;
+		right: 0;
+	}
+	.imgWrapper {
+		background-color: $darkPurple;
+		width: 90%;
+		height: 70%;
+		top: 25%;
+		position: absolute;
+		box-shadow: -0.5rem 0.5rem #7225a055;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: auto;
+		}
+		.animContainer {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+	}
+}
+
+aside.work-subnav {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	display: none;
+	.link {
+		position: relative;
+		color: $white;
+		font-size: 1.1rem;
+		transition: all 0.2s 0.2s ease;
+		font-weight: 300;
+		font-family: GTWalsheimPro, sans-serif;
+		width: 1.5rem;
+		height: 0.7rem;
+		margin: 0.2rem 0;
+		cursor: pointer;
+		p {
+			margin: 0;
+		}
+		span:first-child {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			float: left;
+			opacity: 0;
+			transition: all 0.3s 0s ease;
+		}
+		span:last-child {
+			position: absolute;
+			bottom: 50%;
+			right: 0;
+			float: right;
+			opacity: 0;
+			transition: all 0.3s 0s ease;
+		}
+		div.bg {
+			position: absolute;
+			width: 130%;
+			height: 100%;
+			border-bottom: 2px solid $pink;
+			transform: rotate(-45deg) translate(-10%, -55%);
+		}
+	}
+	.link.is-active {
+		height: 2.7rem;
+		width: 1.5rem;
+		margin: 0.5rem 0;
+		transition: all 0.2s 0.4s ease;
+		span:first-child {
+			opacity: 1;
+			top: 0;
+			transition: all 0.3s 0.6s ease;
+		}
+		span:last-child {
+			opacity: 1;
+			bottom: 0;
+			transition: all 0.3s 0.6s ease;
+		}
+	}
+}
+
+.nav-arrows {
+	z-index: 10;
+	width: 12vw;
+	height: 26vw;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	position: fixed;
+	bottom: 20%;
+	right: 10%;
+	img {
+		cursor: pointer;
+		background-color: $lightPurple;
+		height: 12vw;
+		width: 12vw;
+		border: 5px solid $lightPurple;
+		box-shadow: -0.5rem 0.5rem #7225a055;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.nav-arrows {
+		display: none;
+	}
+	aside.work-subnav {
+		display: block;
+		top: calc(50% + 5vw);
+	}
+	div.work {
+		height: 100vw; // max-width: 545px;
+		// max-height: 606px;
+		.pink {
+			background: url("../imgs/pink.svg") no-repeat bottom right;
+		}
+		.yellow {
+			background: url("../imgs/yellow.svg") no-repeat center top;
+			width: 30%;
+			top: 12%;
+			left: 2%;
+		}
+		.blue {
+			top: 0%;
+			max-width: 360px;
+		}
+		.imgWrapper {
+			top: 20%;
+			height: 73%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	aside.work-subnav {
+		top: 50%;
+	}
+	div.work {
+		height: 60vw;
+		max-width: 140vh;
+		max-height: 90vh;
+		.pink {
+			width: 86%;
+			height: 30%;
+			left: 1%;
+		}
+		.yellow {
+			width: 27%;
+			top: 8%;
+			left: 2%;
+		}
+		.blue {
+			background: url("../imgs/blue.svg") no-repeat center top;
+			box-shadow: none;
+			width: 40%;
+			height: fit-content;
+			right: 0%;
+			padding: 5%;
+			// padding: 6% 8% 8% 6%;
+			max-width: unset;
+			min-width: 22rem;
+			min-height: 19rem;
+			height: 60%;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			p,
+			a {
+				font-size: 1rem;
+				margin: 1rem 0;
+			}
+			a {
+				padding: 0.1rem 0.3rem;
+				width: 6rem;
+				text-align: center;
+			}
+		}
+		.imgWrapper {
+			top: 18%;
+			width: 80%;
+			height: 73%;
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	div.work {
+		width: 1152px;
+		height: 768px;
+	}
+}
