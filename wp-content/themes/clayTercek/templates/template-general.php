@@ -1,4 +1,4 @@
-<?php /* Template Name: Example Template */
+<?php /* Template Name: general */
 get_header(); ?>
 	<div class="content">
 		<main>
