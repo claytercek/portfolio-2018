@@ -23,7 +23,33 @@ get_header(); ?>
       <div class="col-md-8 col-sm-12 single-post"> 
         
         <!--article-->
-
+        <article class="col-md-12 wow fadeInUp">
+          <header class="entry-header"> <span class="date-article"><i class="fa fa-calendar-o"></i> JULY 13 2017</span> <a href="blog-post.html"><img src="dist/img/a-1.jpg" class="img-responsive"></a> <span class="byline"><span class="author vcard"><a href="#"><i class="fa fa-folder-o"></i> Business &bull; Industry</a><a href="#"><i class="fa fa-user-o"></i> Rijo</a> </span></span> <a href="#">
+            <h2>10 places to visit in 2018</h2>
+            </a></header>
+          <p>Nullam consequat sed purus ut laoreet. Etiam fringilla placerat magna a aliquam. Mauris
+            mollis tristique. In ac interdum ipsum. Phasellus in accumsan metus.</p>
+          <a class="btn  readmore-btn" href="#">READ MORE</a> </article>
+        <!--/article--> 
+        
+        <!--article-->
+        <article class="col-md-12 wow fadeInUp">
+          <header class="entry-header"> <span class="date-article"><i class="fa fa-calendar-o"></i> JULY 13 2017</span> <a href="#"><img src="dist/img/a-2.jpg" class="img-responsive"></a> <span class="byline"><span class="author vcard"><a href="#"><i class="fa fa-folder-o"></i> Business &bull; Industry</a><a href="#"><i class="fa fa-user-o"></i> Rijo</a> </span></span> <a href="#">
+            <h2>Top 10 tools for Automation and Better in Photoshop </h2>
+            </a></header>
+          <p>Nullam consequat sed purus ut laoreet. Etiam fringilla placerat magna a aliquam. Mauris
+            mollis tristique. In ac interdum ipsum. Phasellus in accumsan metus.</p>
+          <a class="btn  readmore-btn" href="#">READ MORE</a> </article>
+        <!--/article--> 
+        
+        <!--article-->
+        <article class="col-md-12 wow fadeInUp">
+          <header class="entry-header"> <span class="date-article"><i class="fa fa-calendar-o"></i> JULY 13 2017</span> <a href="#"><img src="dist/img/a-3.jpg" class="img-responsive"></a> <span class="byline"><span class="author vcard"><a href="#"><i class="fa fa-folder-o"></i> Business &bull; Industry</a><a href="#"><i class="fa fa-user-o"></i> Rijo</a> </span></span> <a href="#">
+            <h2>SUperb Workspace interior design for your new desktop</h2>
+            </a></header>
+          <p>Nullam consequat sed purus ut laoreet. Etiam fringilla placerat magna a aliquam. Mauris
+            mollis tristique. In ac interdum ipsum. Phasellus in accumsan metus.</p>
+          <a class="btn  readmore-btn" href="#">READ MORE</a> </article>
         <!--/article-->
         
         <div class="clearfix"></div>
