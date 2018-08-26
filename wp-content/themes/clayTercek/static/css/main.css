@@ -188,6 +188,9 @@ main.sidebar {
       margin: 0.2rem 0;
       padding-left: 1rem;
       list-style-type: none; }
+      main.sidebar aside ul li a {
+        color: white;
+        text-decoration: none; }
       main.sidebar aside ul li::before {
         content: none; }
 

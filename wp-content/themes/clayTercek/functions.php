@@ -29,6 +29,10 @@ function register_widgets()
     register_sidebar([
         'name'          => 'Blog Sidebar',
         'id'            => 'sidebar',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
     ]);
 }
 add_action('widgets_init', 'register_widgets');

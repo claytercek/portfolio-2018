@@ -30,6 +30,11 @@ main.sidebar {
 			padding-left: 1rem;
 			list-style-type: none;
 
+			li a {
+				color: white;
+				text-decoration: none;
+			}
+
 			li::before {
 				content: none;
 			}

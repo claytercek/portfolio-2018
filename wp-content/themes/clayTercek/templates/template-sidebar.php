@@ -1,7 +1,7 @@
-<?php /* Template Name: general */
+<?php /* Template Name: sidebar */
 get_header(); ?>
 <div class="content">
-	<main>
+	<main class="sidebar">
 		<?php if (have_posts()): ?>
 			<article class="post">   
 				<?php // TO SHOW THE PAGE CONTENTS?>
@@ -13,6 +13,12 @@ get_header(); ?>
 			<?php else: ?>
 			<h2>Sorry, No Post Found</h2>
 		<?php endif; ?>
+		<aside class="sidebar">
+			<?php get_sidebar();?>
+		</aside>
+
 	</main>
 </div>
+
+
 <?php get_footer(); ?>
