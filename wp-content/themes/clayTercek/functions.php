@@ -24,14 +24,15 @@ function register_menus()
 
 add_action('init', 'register_menus');
 
+function register_widgets()
+{
+    register_sidebar([
+        'name'          => 'Blog Sidebar',
+        'id'            => 'sidebar',
+    ]);
+}
+add_action('widgets_init', 'register_widgets');
+
+
 add_theme_support('post-thumbnails');
-
-
-// add_filter( 'nav_menu_link_attributes', 'menu_add_class', 10, 3 );
-
-// function menu_add_class( $atts, $item, $args ) {
-//     $class = 'page'; // or something based on $item
-//     $atts['class'] = $class;
-//     return $atts;
-// }
 
