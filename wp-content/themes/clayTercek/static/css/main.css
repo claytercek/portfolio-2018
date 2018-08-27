@@ -260,8 +260,8 @@ main.portfolio {
       transition: 0.3s 0.1s ease-out; }
       main.portfolio article .imgWrapper img {
         position: absolute;
-        top: 0;
         left: 0;
+        top: 0;
         height: 100%; }
   main.portfolio article.hover .imgWrapper {
     opacity: 1; }

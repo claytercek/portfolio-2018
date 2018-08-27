@@ -21,7 +21,14 @@ get_header(); ?>
 				<article>
 					<a href="<?php the_permalink(); ?>"><?php the_title()?></a>
 					<div class="imgWrapper">
-						<?php the_post_thumbnail();?>
+						<?php 
+						if (has_post_thumbnail()) {
+						the_post_thumbnail();
+						} else {
+							echo '<img src="https://placehold.it/720x720" alt="">' ;
+						}
+						
+						?>
 					</div>
 				</article>
 				<?php endwhile; ?>
