@@ -10,14 +10,14 @@ $arg = [
   'post_type'     => 'post',
   'post_status'   => 'publish'
 ];
-$postAmount = 0;
+$postCount = 0;
 $posts = new WP_Query($arg);
 get_header(); ?>
 <div class="content">
 	<?php if ($posts->have_posts()) : ?>
 		<main>
 			<?php while ($posts->have_posts()) : $posts->the_post(); ?>
-					<div class="work is-active">
+					<div class="work <?php if ($postCount == 0) {echo "is-active";}; ?>">
 						<div class="yellow"></div>
 						<div class="pink"></div>
 						<div class="imgWrapper">
@@ -31,16 +31,16 @@ get_header(); ?>
 						</div>
 					</div>
 			<?php 
-			$postAmount += 1;
+			$postCount += 1;
 			endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 		</main>
 		<aside class="work-subnav">
-			<?php for ($x = 1; $x <= $postAmount; $x++) { ?>
-				<div class="link is-active">
+			<?php for ($x = 1; $x <= $postCount; $x++) { ?>
+				<div class="link <?php if ($x == 1) {echo "is-active";}; ?>">
 					<span><?php echo $x ;?></span>
 					<div class="bg"></div>
-					<span><?php echo $postAmount ;?></span>
+					<span><?php echo $postCount ;?></span>
 				</div>
 			<?php } ?>
 		</aside>
