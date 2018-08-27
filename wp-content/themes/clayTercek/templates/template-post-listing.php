@@ -54,4 +54,11 @@ get_header(); ?>
 		</p>
 	<?php endif; ?>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/static/js/js_dependencies/SplitText.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/static/js/js_dependencies/jquery.touchSwipe.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/static/js/js_dependencies/jquery.mousewheel.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/static/js/js_dependencies/lottie.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/static/js/verticalNav.js"></script>
 <?php get_footer(); ?>
