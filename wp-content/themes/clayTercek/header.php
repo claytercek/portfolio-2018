@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<div class="bg"></div>
-		<a id="logo" href="index.html">
+		<a id="logo" href="<?php echo get_home_url()  ?>">
 			<h2>Clay Tercek</h2>
 		</a>
 
