@@ -23,7 +23,7 @@ main.portfolio {
 		opacity: 0.5;
 		left: 50%;
 		border-radius: 100%;
-		z-index: 0;
+		z-index: -5;
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
@@ -61,31 +61,35 @@ main.portfolio {
 		}
 
 		.imgWrapper {
-			opacity: 0;
 			position: absolute;
 			width: 70%;
 			padding-top: 70%;
-			background-color: $lightPurple;
 			left: 50%;
+			top: 50%;
 			border-radius: 100%;
 			z-index: 0;
-			top: 50%;
 			overflow: hidden;
 			transform: translate(-50%, -50%);
-			transition: 0.3s 0.1s ease-out;
+			pointer-events: none;
 
 			img {
 				position: absolute;
-				left: 0;
-				top: 0;
+				margin: auto;
+				top: 100%;
+				right: 0;
+				width: 100%;
 				height: 100%;
+				transition: all 0.3s 0s ease-out;
+				opacity: 0.3;
 			}
 		}
 	}
 
 	article.hover {
-		.imgWrapper {
+		.imgWrapper img {
+			top: 0;
 			opacity: 1;
+			transition: all 0.3s 0.3s ease-out;
 		}
 		a {
 			background-size: 100% 32%;
