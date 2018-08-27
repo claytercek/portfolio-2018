@@ -47,4 +47,7 @@ main {
 @import "404";
 @import "index";
 
-// 788 x 470
+// Make header behave in admin view
+.customize-support header {
+	top: 32px !important;
+}

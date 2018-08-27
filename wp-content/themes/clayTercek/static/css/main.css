@@ -197,225 +197,131 @@ main.sidebar {
 @media (min-width: 768px) {
   main.sidebar aside {
     display: block; } }
-div.work.is-active {
-  visibility: visible; }
-
-div.work {
-  width: 90%;
-  height: 75vh;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden; }
-  div.work .blue {
-    background: #0abac7;
-    position: absolute;
-    width: 85%;
-    top: 10%;
-    right: 0;
-    box-shadow: -0.5rem 0.5rem #7225a055;
-    padding: 5%; }
-    div.work .blue h3 {
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: Bold;
-      font-family: GTWalsheimPro, sans-serif;
-      margin: 0; }
-    div.work .blue p {
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 300;
-      font-family: GTWalsheimPro, sans-serif;
-      line-height: 1.3; }
-    div.work .blue a {
-      border: 2px solid #fff;
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 300;
-      font-family: GTWalsheimPro, sans-serif;
-      text-decoration: none;
-      line-height: 1.3;
-      padding: 0.1rem 0.2rem; }
-  div.work .yellow {
-    background: url("../imgs/yellow_noDots.svg") no-repeat center top;
-    position: absolute;
-    width: 40%;
-    height: 30%;
-    top: 5%; }
-  div.work .pink {
-    background: url("../imgs/pink_noDots.svg") no-repeat bottom right;
-    position: absolute;
-    width: 95%;
-    height: 20%;
-    bottom: 0;
-    right: 0; }
-  div.work .imgWrapper {
-    background-color: #231549;
-    width: 90%;
-    height: 70%;
-    top: 25%;
-    position: absolute;
-    box-shadow: -0.5rem 0.5rem #7225a055;
-    overflow: hidden; }
-    div.work .imgWrapper img {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: auto; }
-    div.work .imgWrapper .animContainer {
-      width: 100%;
-      height: 100%;
-      position: absolute; }
-
-aside.work-subnav {
+main.portfolio {
+  margin: auto;
+  height: unset;
+  text-justify: inter-word;
+  text-align: justify;
+  position: relative;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  display: none; }
-  aside.work-subnav .link {
-    position: relative;
-    color: #fff;
-    font-size: 1.1rem;
-    transition: all 0.2s 0.2s ease;
-    font-weight: 300;
-    font-family: GTWalsheimPro, sans-serif;
-    width: 1.5rem;
-    height: 0.7rem;
-    margin: 0.2rem 0;
-    cursor: pointer; }
-    aside.work-subnav .link p {
-      margin: 0; }
-    aside.work-subnav .link span:first-child {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      float: left;
-      opacity: 0;
-      transition: all 0.3s 0s ease; }
-    aside.work-subnav .link span:last-child {
-      position: absolute;
-      bottom: 50%;
-      right: 0;
-      float: right;
-      opacity: 0;
-      transition: all 0.3s 0s ease; }
-    aside.work-subnav .link div.bg {
-      position: absolute;
-      width: 130%;
-      height: 100%;
-      border-bottom: 2px solid #f82aaa;
-      transform: rotate(-45deg) translate(-10%, -55%); }
-  aside.work-subnav .link.is-active {
-    height: 2.7rem;
-    width: 1.5rem;
-    margin: 0.5rem 0;
-    transition: all 0.2s 0.4s ease; }
-    aside.work-subnav .link.is-active span:first-child {
-      opacity: 1;
-      top: 0;
-      transition: all 0.3s 0.6s ease; }
-    aside.work-subnav .link.is-active span:last-child {
-      opacity: 1;
-      bottom: 0;
-      transition: all 0.3s 0.6s ease; }
-
-.nav-arrows {
-  z-index: 10;
-  width: 12vw;
-  height: 26vw;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  position: fixed;
-  bottom: 20%;
-  right: 10%; }
-  .nav-arrows img {
-    cursor: pointer;
+  top: 0;
+  bottom: 0; }
+  main.portfolio .circle {
+    position: absolute;
+    width: 80%;
+    padding-top: 80%;
     background-color: #7225a0;
-    height: 12vw;
-    width: 12vw;
-    border: 5px solid #7225a0;
-    box-shadow: -0.5rem 0.5rem #7225a055; }
+    opacity: 0.5;
+    left: 50%;
+    border-radius: 100%;
+    z-index: 0;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  main.portfolio .text {
+    position: absolute;
+    max-width: 40rem;
+    width: 100%;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  main.portfolio article {
+    display: inline;
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: 300;
+    text-transform: capitalize; }
+    main.portfolio article a {
+      text-decoration: none;
+      color: white;
+      display: inline;
+      white-space: wrap;
+      position: relative;
+      margin: 0;
+      padding: 0.5rem 0;
+      background-image: linear-gradient(120deg, #f82aaa 0%, #f82aaa 100%);
+      background-repeat: no-repeat;
+      background-size: 0 32%;
+      background-position: 0 75%;
+      transition: opacity 0.5s ease-out, background-size 0.3s 0.1s ease-out;
+      z-index: 2; }
+    main.portfolio article .imgWrapper {
+      opacity: 0;
+      position: absolute;
+      width: 70%;
+      padding-top: 70%;
+      background-color: #7225a0;
+      left: 50%;
+      border-radius: 100%;
+      z-index: 0;
+      top: 50%;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+      transition: 0.3s 0.1s ease-out; }
+      main.portfolio article .imgWrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+  main.portfolio article.hover .imgWrapper {
+    opacity: 1; }
+  main.portfolio article.hover a {
+    background-size: 100% 32%; }
+  main.portfolio article.notHover a {
+    opacity: 0.2; }
+  main.portfolio article:not(:first-of-type)::before {
+    content: "/";
+    position: relative;
+    opacity: 1;
+    color: #f82aaa;
+    z-index: 3;
+    transition: all 0.3s ease-out; }
+  main.portfolio article.hover::before,
+  main.portfolio article.notHover::before {
+    opacity: 0.3; }
 
-@media screen and (min-width: 480px) {
-  .nav-arrows {
-    display: none; }
-
-  aside.work-subnav {
-    display: block;
-    top: calc(50% + 5vw); }
-
-  div.work {
-    height: 100vw; }
-    div.work .pink {
-      background: url("../imgs/pink.svg") no-repeat bottom right; }
-    div.work .yellow {
-      background: url("../imgs/yellow.svg") no-repeat center top;
-      width: 30%;
-      top: 12%;
-      left: 2%; }
-    div.work .blue {
-      top: 0%;
-      max-width: 360px; }
-    div.work .imgWrapper {
-      top: 20%;
-      height: 73%; } }
-@media screen and (min-width: 768px) {
-  aside.work-subnav {
-    top: 50%; }
-
-  div.work {
-    height: 60vw;
-    max-width: 140vh;
-    max-height: 90vh; }
-    div.work .pink {
-      width: 86%;
-      height: 30%;
-      left: 1%; }
-    div.work .yellow {
-      width: 27%;
-      top: 8%;
-      left: 2%; }
-    div.work .blue {
-      background: url("../imgs/blue.svg") no-repeat center top;
-      box-shadow: none;
-      width: 40%;
-      height: fit-content;
-      right: 0%;
-      padding: 5%;
-      max-width: unset;
-      min-width: 22rem;
-      min-height: 19rem;
-      height: 60%;
+@media screen and (max-width: 768px) {
+  main.portfolio {
+    padding: 4rem 0rem;
+    text-align: left; }
+    main.portfolio .text {
+      position: static;
+      transform: none;
+      max-width: 430px;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
-      align-content: center;
       justify-content: center; }
-      div.work .blue p,
-      div.work .blue a {
-        font-size: 1rem;
-        margin: 1rem 0; }
-      div.work .blue a {
-        padding: 0.1rem 0.3rem;
-        width: 6rem;
-        text-align: center; }
-    div.work .imgWrapper {
-      top: 18%;
-      width: 80%;
-      height: 73%; }
-      div.work .imgWrapper img {
-        height: auto;
-        width: 100%; } }
-@media screen and (min-width: 1280px) {
-  div.work {
-    width: 1152px;
-    height: 768px; } }
+    main.portfolio article {
+      display: block !important;
+      font-size: 6.5vw;
+      position: static;
+      margin: 0; }
+      main.portfolio article a {
+        background-size: 50% 20%;
+        background-position: 0 70%; }
+    main.portfolio article.hover .imgWrapper {
+      opacity: 0; }
+    main.portfolio article::before {
+      display: none; }
+    main.portfolio .circle {
+      position: fixed;
+      top: 50%;
+      width: 120%;
+      padding-top: 120%; } }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  main.portfolio .text {
+    margin: auto; }
+  main.portfolio article {
+    font-size: 2rem; }
+  main.portfolio .circle {
+    width: 500px;
+    padding-top: 500px; } }
 header {
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%;
+  padding: 0 5%;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1440px;
@@ -440,7 +346,7 @@ header {
     right: 0;
     height: 4rem; }
   header > ul {
-    visibility: hidden; }
+    display: none; }
   header h2 {
     margin: 1rem 0;
     color: #fff; }
@@ -486,7 +392,7 @@ header {
   position: absolute;
   height: 22px;
   width: unset;
-  right: 0;
+  right: 5%;
   top: 1rem;
   cursor: pointer;
   transition: 0.4s ease; }
@@ -495,7 +401,7 @@ header {
   width: unset;
   position: absolute;
   height: 22px;
-  right: 0;
+  right: 5%;
   top: 1rem;
   cursor: pointer;
   transition: 0.4s ease;
@@ -551,7 +457,7 @@ header #overlay {
     opacity: 0; }
 
   header > ul {
-    visibility: visible; } }
+    display: flex; } }
 @media screen and (min-width: 1600px) {
   .menuIcon {
     top: -3rem;
@@ -852,5 +758,7 @@ div.home {
       right: 2%;
       width: 60%;
       top: 5%; } }
+.customize-support header {
+  top: 32px !important; }
 
 /*# sourceMappingURL=main.css.map */

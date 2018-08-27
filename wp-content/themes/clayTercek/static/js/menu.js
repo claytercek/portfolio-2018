@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 	});
 
 	const NavItems = $("header > ul > .menu-item");
-	console.log(NavItems);
 	const SearchLink = $("header #search").first();
 	const menuIcon = $("header .menuIcon").first();
 	const hideNav = () => {
