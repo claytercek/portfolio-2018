@@ -5,7 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title><?php the_title();?></title>
+	<?php
+	$title = "Clay Tercek";
+	if (!is_front_page()){
+		$title = "Clay Tercek | " . get_the_title();
+	} if (is_post_type_archive()) {
+		$title = "Clay Tercek | " . post_type_archive_title('',false);
+	}
+	?>
+	<title><?php echo $title;?></title>
 	<?php wp_head();?>
 </head>
 
