@@ -257,16 +257,15 @@ main.portfolio {
       pointer-events: none; }
       main.portfolio article .imgWrapper img {
         position: absolute;
-        top: 100%;
-        left: 50%;
-        height: 100%;
-        width: auto;
-        transform: translateX(-50%);
+        top: 150%;
+        width: 100%;
+        height: auto;
+        transform: translateY(-50%);
         transition: all 0.3s 0s ease-out;
         opacity: 0.3; }
   main.portfolio article.hover .imgWrapper img {
-    top: 0;
-    opacity: 1;
+    top: 50%;
+    opacity: 0.7;
     transition: all 0.3s 0.3s ease-out; }
   main.portfolio article.hover a {
     background-size: 100% 60%; }
