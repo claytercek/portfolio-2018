@@ -238,11 +238,11 @@ main.portfolio {
       white-space: wrap;
       position: relative;
       margin: 0;
-      padding: 0.5rem 0;
-      background-image: linear-gradient(120deg, #231549 0%, #231549 100%);
+      padding: 0.5rem 0.3rem;
+      background-image: linear-gradient(120deg, #f82aaa 0%, #f82aaa 100%);
       background-repeat: no-repeat;
-      background-size: 0 32%;
-      background-position: 0 75%;
+      background-size: 0 60%;
+      background-position: 0 40%;
       transition: opacity 0.5s ease-out, background-size 0.3s 0.1s ease-out;
       z-index: 2; }
     main.portfolio article .imgWrapper {
@@ -269,7 +269,7 @@ main.portfolio {
     opacity: 1;
     transition: all 0.3s 0.3s ease-out; }
   main.portfolio article.hover a {
-    background-size: 100% 32%; }
+    background-size: 100% 60%; }
   main.portfolio article.notHover a {
     opacity: 0.2; }
   main.portfolio article:not(:first-of-type)::before {
