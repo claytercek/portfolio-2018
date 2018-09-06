@@ -16,7 +16,7 @@ get_header(); ?>
 	<main class="experience">
 		<?php if( $the_query->have_posts() ): ?>
 			<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				<a class="experienceItem" href="<?php the_field('URL'); ?>">
+				<a class="experienceItem" href="<?php the_field('url'); ?>">
 					<div class="dot"></div>
 					<div class="text">
 						<h3><span><?php the_field('company'); ?></span> <?php the_field('title'); ?></h3>

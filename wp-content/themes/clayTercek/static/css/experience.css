@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 23 of scss/experience.scss
+        on line 24 of scss/experience.scss
 
-18: 			position: absolute;
-19: 			left: -0.25rem;
-20: 			top: 4rem;
-21: 			width: 0.5rem;
-22: 			height: 100%;
-23: 			background-color: $blue;
-24: 		}
-25: 
-26: 		&:last-of-type::before {
-27: 			background-image: linear-gradient($blue, #f82aaa00);
-28: 			height: 75%;
+19: 			position: absolute;
+20: 			left: -0.25rem;
+21: 			top: 4rem;
+22: 			width: 0.5rem;
+23: 			height: 100%;
+24: 			background-color: $blue;
+25: 		}
+26: 
+27: 		&:last-of-type::before {
+28: 			background-image: linear-gradient($blue, #f82aaa00);
+29: 			height: 75%;
 
 Backtrace:
-scss/experience.scss:23
+scss/experience.scss:24
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ scss/experience.scss:23
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 23 of scss/experience.scss\A \A 18: 			position: absolute;\A 19: 			left: -0.25rem;\A 20: 			top: 4rem;\A 21: 			width: 0.5rem;\A 22: 			height: 100%;\A 23: 			background-color: $blue;\A 24: 		}\A 25: \A 26: 		&:last-of-type::before {\A 27: 			background-image: linear-gradient($blue, #f82aaa00);\A 28: 			height: 75%;"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 24 of scss/experience.scss\A \A 19: 			position: absolute;\A 20: 			left: -0.25rem;\A 21: 			top: 4rem;\A 22: 			width: 0.5rem;\A 23: 			height: 100%;\A 24: 			background-color: $blue;\A 25: 		}\A 26: \A 27: 		&:last-of-type::before {\A 28: 			background-image: linear-gradient($blue, #f82aaa00);\A 29: 			height: 75%;"; }

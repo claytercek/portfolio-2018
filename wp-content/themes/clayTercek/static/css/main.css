@@ -765,9 +765,10 @@ div.home {
       width: 60%;
       top: 5%; } }
 .experience {
-  padding-top: 8rem;
+  padding-top: 6rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
   max-width: 840px;
   margin: auto;
   font-family: GTWalsheimPro, sans-serif; }
