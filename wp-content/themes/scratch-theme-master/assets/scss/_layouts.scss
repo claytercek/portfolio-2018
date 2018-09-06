@@ -1,0 +1,225 @@
+/********************LAYOUTS********************/
+
+/* Base Styles */
+$circle-size: 160px;
+$icon-size: 3rem;
+$staggered-circle-size: 250px;
+$staggered-icon-size: 6rem;
+$staggered-row-height: 500px;
+$button-color: $olive;
+$button-hover-color: lighten($olive, 8%);
+$overlay-color: rgba($black, 0.4);
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $overlay-color;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.hero-unit, .flexible-columns, .staggered, .wysiwygs {
+  .circle {
+    width: $circle-size;
+    height: $circle-size;
+    background-color: $button-color;
+    margin: 0 auto;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+    i {
+      display: block;
+      color: $white;
+      font-size: $icon-size;
+      transition: color 0.25s ease-in-out 0s;
+    }
+
+    &.scratch-bg {
+      background-color: transparent;
+    }
+  }
+}
+
+/* Hero Unit */
+.hero-unit {
+  .scratch-bg {
+    height: auto;
+  }
+
+  .content {
+    margin: 10rem auto;
+
+    @include m {
+      width: 65%;
+    }
+
+
+    color: $white;
+  }
+
+  .left {
+    .content {
+      float: left;
+    }
+  }
+
+  .right {
+    .content {
+      float: right;
+    }
+  }
+}
+
+/* Flexible Columns */
+.flexible-columns {
+  [class^="row-"], [class*=" row-"] {
+    // row-specific styles here
+
+  }
+
+  [class^="column-"], [class*=" column-"] {
+    // column-specific styles here
+    padding: 1rem;
+
+    a {
+      &:hover, &:focus {
+        text-decoration: none;
+
+        .circle {
+          background-color: $button-hover-color;
+
+          &.scratch-bg {
+            background-color: transparent;
+            opacity: 0.8;
+          }
+        }
+
+        i {
+          color: $button-color;
+        }
+      }
+    }
+  }
+}
+
+/* Staggered Images with Text */
+.staggered {
+  .row {
+    .circle {
+      width: $staggered-circle-size;
+      height: $staggered-circle-size;
+
+      @include m {
+        @include valign;
+      }
+
+
+      i {
+        font-size: $staggered-icon-size;
+      }
+    }
+
+    &:nth-child(odd) {
+      background-color: $gray;
+    }
+
+    @include m {
+      height: $staggered-row-height;
+
+      .first, .last, .wrap {
+        height: 100%;
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(even) {
+        .first {
+          float: right;
+          margin-left: 2.762430939%;
+        }
+
+        .last {
+          float: left;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Slider */
+.slider-row {
+  .slide-text {
+    margin: 0 auto;
+    padding: 1rem;
+    color: $white;
+
+    @include m {
+      padding: 1rem 6rem;
+    }
+  }
+}
+
+.glide {
+  /***** Customizations of glide-core *****/
+  height: 350px;
+
+  @media (min-width: 567px) {
+    height: 500px;
+  }
+
+  overflow: hidden;
+
+  .glide__wrapper {
+    height: 100%;
+  }
+
+  .glide__track {
+    padding: 0;
+    margin: 0;
+  }
+
+  .glide__slide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  /***** Customizations of glide-theme *****/
+  .glide__bullets {
+    margin: 0;
+    padding: 0;
+  }
+
+  .glide__arrow {
+    border: 0;
+    padding: 0;
+    i {
+      font-size: 1.5rem;
+    }
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+/* WYSIWYGs */
+.wysiwygs {
+  [class^="row-"], [class*=" row-"] {
+    // row-specific styles here
+
+  }
+
+  [class^="column-"], [class*=" column-"] {
+    // column-specific styles here
+
+  }
+}
