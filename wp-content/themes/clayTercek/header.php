@@ -9,7 +9,7 @@
 	<?php wp_head();?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<header>
 		<div class="bg"></div>
 		<a id="logo" href="<?php echo get_home_url()  ?>">

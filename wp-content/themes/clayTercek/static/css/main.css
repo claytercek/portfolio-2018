@@ -304,6 +304,8 @@ main.portfolio {
       main.portfolio article a {
         background-size: 50% 20%;
         background-position: 0 70%; }
+      main.portfolio article .imgWrapper img {
+        display: none; }
     main.portfolio article.hover .imgWrapper {
       opacity: 0; }
     main.portfolio article::before {
@@ -762,7 +764,7 @@ div.home {
       right: 2%;
       width: 60%;
       top: 5%; } }
-.customize-support header {
+.admin-bar header {
   top: 32px !important; }
 
 /*# sourceMappingURL=main.css.map */
