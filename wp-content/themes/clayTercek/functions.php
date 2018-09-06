@@ -68,3 +68,139 @@ function my_custom_post_experience() {
   register_post_type( 'experience', $args ); 
 }
 add_action( 'init', 'my_custom_post_experience' );
+
+
+
+//ACF Stuff
+
+// 1. customize ACF path
+add_filter('acf/settings/path', 'my_acf_settings_path');
+ 
+function my_acf_settings_path( $path ) {
+ 
+    // update path
+    $path = get_stylesheet_directory() . '/plugins/acf/';
+    
+    // return
+    return $path;
+    
+}
+ 
+
+// 2. customize ACF dir
+add_filter('acf/settings/dir', 'my_acf_settings_dir');
+ 
+function my_acf_settings_dir( $dir ) {
+ 
+    // update path
+    $dir = get_stylesheet_directory_uri() . '/plugins/acf/';
+    
+    // return
+    return $dir;
+    
+}
+ 
+
+// 3. Hide ACF field group menu item
+add_filter('acf/settings/show_admin', '__return_false');
+
+
+// 4. Include ACF
+include_once( get_stylesheet_directory() . '/plugins/acf/acf.php' );
+
+//5. Register Fields
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_experiences',
+		'title' => 'Experiences',
+		'fields' => array (
+			array (
+				'key' => 'field_5b9140156d339',
+				'label' => 'Title',
+				'name' => 'title',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => 'Ex: Intern',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b9140576d33a',
+				'label' => 'Company',
+				'name' => 'company',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => 'Ex: Microsoft',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b91408f6d33c',
+				'label' => 'Start Date',
+				'name' => 'start_date',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => 'Ex: June 2018',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b9140ba6d33d',
+				'label' => 'End Date',
+				'name' => 'end_date',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => 'Ex: September 2018',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b9140e26d33e',
+				'label' => 'Description',
+				'name' => 'description',
+				'type' => 'textarea',
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'experience',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+				0 => 'the_content',
+				1 => 'excerpt',
+				2 => 'discussion',
+				3 => 'comments',
+				4 => 'author',
+				5 => 'format',
+				6 => 'featured_image',
+				7 => 'categories',
+				8 => 'tags',
+			),
+		),
+		'menu_order' => 0,
+	));
+}
