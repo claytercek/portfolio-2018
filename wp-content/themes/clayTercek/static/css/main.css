@@ -58,13 +58,13 @@ div.content {
   position: relative;
   width: 90%;
   height: 100%;
-  max-width: 1440px; }
+  max-width: 1296px; }
 
 main {
   padding-top: 6rem;
   padding-bottom: 2rem;
   width: 100%;
-  height: 100%; }
+  min-height: 100%; }
 
 article {
   max-width: 720px;
@@ -211,7 +211,7 @@ main.portfolio {
     width: 80%;
     padding-top: 80%;
     background-color: #7225a0;
-    opacity: 1;
+    opacity: 0.5;
     left: 50%;
     border-radius: 100%;
     z-index: -5;
@@ -277,7 +277,7 @@ main.portfolio {
     opacity: 1;
     color: #f82aaa;
     z-index: 3;
-    font-weight: 500;
+    font-weight: 400;
     transition: all 0.3s ease-out; }
   main.portfolio article.hover::before,
   main.portfolio article.notHover::before {
@@ -468,134 +468,135 @@ header #overlay {
     top: -3rem;
     opacity: 0; } }
 main.single {
-  padding-bottom: 2rem; }
-  main.single .hero {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    max-height: 430px; }
-    main.single .hero .blue {
-      position: absolute;
-      top: 5%;
-      right: 0;
-      width: 40%;
-      height: 50%;
-      background-image: url("../imgs/blueTriangleDots.svg");
-      background-repeat: no-repeat;
-      background-position: top right; }
-    main.single .hero .img {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  max-width: 980px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: GTWalsheimPro, sans-serif; }
+  main.single .mainInfo {
+    text-align: right;
+    margin-left: 5rem; }
+    main.single .mainInfo h1 {
+      margin: 0;
+      color: #fff;
       position: relative;
-      width: 90%;
-      height: 80%;
-      background-size: cover;
-      background-position: center; }
-    main.single .hero .title {
-      width: 95%;
-      left: 5%;
-      height: 25vw;
-      bottom: 0;
-      position: absolute;
-      background-image: url("../imgs/Pink2.svg");
+      display: inline;
+      background-image: linear-gradient(120deg, #f82aaa 0%, #f82aaa 100%);
       background-repeat: no-repeat;
-      background-position: bottom center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: GTWalsheimPro, sans-serif;
-      font-weight: 600;
-      font-size: 8vw;
-      color: white; }
-  main.single .info {
-    padding: 1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 2rem;
-    font-family: GTWalsheimPro, sans-serif; }
-    main.single .info h3 {
-      color: #f82aaa;
-      margin: 2rem 0 0.5rem 0; }
-    main.single .info p {
+      background-size: 100% 40%;
+      background-position: -2% 90%; }
+  main.single .bodyText {
+    width: 700px; }
+    main.single .bodyText h2 {
+      margin: 0;
+      font-weight: 500;
       color: white;
+      position: relative;
+      display: inline; }
+      main.single .bodyText h2::after {
+        content: " ";
+        position: absolute;
+        width: 95%;
+        left: -0.2rem;
+        bottom: 5%;
+        height: 40%;
+        background-color: #f82aaa;
+        z-index: -1; }
+    main.single .bodyText div.links {
+      min-width: 380px; }
+    main.single .bodyText p {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
       font-weight: 300;
-      font-size: 1rem;
-      line-height: 1.5;
+      display: block; }
+    main.single .bodyText ul {
       margin: 0;
-      width: 100%; }
-    main.single .info .links {
-      margin: -1rem;
-      display: flex;
-      flex-flow: row nowrap; }
-      main.single .info .links a {
-        text-align: center;
-        padding: 4%;
-        height: 14vw;
-        flex-grow: 1;
-        margin: 0.5rem;
-        text-decoration: none;
-        color: white;
-        font-weight: 600;
-        font-size: 5vw;
-        background-repeat: no-repeat; }
-      main.single .info .links a:first-child {
-        background-image: url("../imgs/linkBG1.svg"); }
-      main.single .info .links a:last-child {
-        background-image: url("../imgs/linkBG2.svg"); }
+      margin-top: 1rem;
+      padding: 0;
+      font-size: 1.125rem;
+      font-weight: 300; }
+      main.single .bodyText ul h3 {
+        display: inline;
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #fff; }
+        main.single .bodyText ul h3::after {
+          content: " ";
+          position: absolute;
+          width: 95%;
+          left: -0.2rem;
+          bottom: 5%;
+          height: 40%;
+          background-color: #f82aaa;
+          z-index: -1; }
+      main.single .bodyText ul li::before {
+        display: none; }
+    main.single .bodyText a {
+      margin-top: 2rem;
+      display: block;
+      float: left;
+      padding: 0.5rem 1rem;
+      margin-right: 1.5rem;
+      background-color: #f82aaa;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+      main.single .bodyText a:hover {
+        background-color: #fa5bbe; }
+      main.single .bodyText a:active {
+        background-color: #e70893; }
+  main.single div.controls a {
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 1rem; }
 
-@media screen and (min-width: 480px) {
-  main.single .hero {
-    min-height: 300px; }
-  main.single .info {
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    main.single .info > div:not(.links) {
-      width: 100%; }
-    main.single .info .links {
-      width: 100%;
-      flex-grow: 1;
-      justify-content: center;
-      margin-bottom: 0.5rem; }
-      main.single .info .links a {
-        flex-grow: 0;
-        width: 12.5rem;
-        height: 4.3rem;
-        font-size: 1.5rem;
-        padding: 0.8rem 0; } }
-@media screen and (min-width: 768px) {
-  main.single .hero {
-    max-height: unset;
-    max-width: 1280px;
-    height: 54vw; }
-    main.single .hero .title {
-      width: 80%;
-      height: 35%;
-      left: unset;
-      right: 5%;
-      font-size: 6vw; }
-  main.single .info > div:not(.links) {
-    width: 30%; } }
-@media screen and (min-width: 960px) {
-  main.single .hero {
-    margin: auto;
-    height: 48vw;
-    max-width: 873px;
-    max-height: 531px; }
-    main.single .hero .title {
-      font-size: 4.5rem; }
-  main.single .info > div {
-    width: 22% !important; }
-  main.single .info {
-    margin: auto;
-    max-width: 1100px; }
-    main.single .info .links {
-      width: 9.25rem !important;
-      flex-grow: 0;
-      flex-direction: column;
+@media screen and (max-width: 768px) {
+  main.single {
+    padding-top: 5rem;
+    flex-direction: column; }
+    main.single .mainInfo {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column-reverse;
       margin: 0;
-      flex-shrink: 1; }
-      main.single .info .links a {
-        font-size: 1.2rem;
-        width: 9.25rem;
-        height: 3.5rem; } }
+      text-align: left; }
+      main.single .mainInfo img {
+        margin: 2rem 0; }
+    main.single .bodyText {
+      width: 100%; }
+    main.single div.controls {
+      position: fixed;
+      height: 3rem;
+      bottom: 0;
+      background-color: #231549;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding-bottom: 1rem; }
+      main.single div.controls a[rel~="prev"] {
+        position: absolute;
+        right: 2rem;
+        bottom: 0.6rem;
+        margin: 0; }
+      main.single div.controls a[rel~="next"] {
+        position: absolute;
+        left: 2rem;
+        bottom: 0.6rem;
+        margin: 0; } }
 main.search {
   padding-bottom: 2rem;
   max-width: 40rem;

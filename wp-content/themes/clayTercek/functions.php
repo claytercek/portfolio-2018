@@ -130,3 +130,20 @@ function my_acf_json_load_point( $paths ) {
 }
 
 add_image_size( 'portfolio-thumb', 576,448 );
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/static/imgs/logo.png);
+		height:80px;
+		width:320px;
+		background-size: 80px 80px;
+		background-repeat: no-repeat;
+        	padding-bottom: 20px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
+add_theme_support( 'custom-logo' );
