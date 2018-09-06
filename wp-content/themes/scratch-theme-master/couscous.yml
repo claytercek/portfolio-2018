@@ -1,0 +1,152 @@
+template:
+  # Name of the directory containing the website template (default is "website")
+  directory: website
+  # Name of the index file (default is "README.md")
+  index: index.md
+
+# List of directories to include in the processing (by default it's empty, so all markdown files are parsed)
+# Paths are relative to the optional source path given when generating the website, repository root by default
+include:
+  - docs
+
+# List of directories to exclude from the processing (default contains "vendor" and "website")
+# Paths are relative to the optional include paths given when generating the website, repository root by default
+exclude:
+  - .DS_Store
+  - .DS_Store?
+  - ._*
+  - .Spotlight-V100
+  - .Trashes
+  - ehthumbs.db
+  - Thumbs.db
+  - node_modules/
+
+# Set this variable to use a Custom Domain
+# The content of this variable will be directly inserted into the CNAME file
+cname: scratchtheme.com
+
+# Set the target branch in which to deploy the generated website
+branch: gh-pages
+
+# Any variable you put in this file is also available in the Twig layouts:
+title: Scratch Theme for WordPress + ACF
+subTitle: Scratch is the world's first Advanced Custom Fields-ready WordPress theme. It's not so much a theme as a springboard for building your own fully custom WordPress themes.
+
+# Base URL of the published website (no "/" at the end!)
+# You are advised to set and use this variable to write your links in the HTML layouts
+baseUrl: http://zackphilipps.github.io/scratch-theme
+
+menu:
+  items:
+    changelog:
+      text: Changelog
+      absoluteUrl: https://github.com/zackphilipps/scratch-theme/releases
+      target: _blank
+    download:
+      text: Download v1.6
+      absoluteUrl: https://github.com/zackphilipps/scratch-theme/archive/master.zip
+      target: _blank
+    github:
+      text: GitHub
+      absoluteUrl: https://github.com/zackphilipps/scratch-theme
+      target: _blank
+
+sidebarMenu:
+  items:
+    introduction:
+      text: Introduction
+      relativeUrl: /
+    gettingStarted:
+      text: Getting Started
+      relativeUrl: /getting-started.html
+    screencasts:
+      text: Screencasts
+      relativeUrl: /screencasts.html
+      children:
+        installingWordPress:
+          text: Installing WordPress
+          relativeUrl: /screencasts.html#using-mamp-to-complete-the-wordpress-installation
+        activatingScratch:
+          text: Activating Scratch
+          relativeUrl: /screencasts.html#activating-scratch-amp-installing-recommended-plugins
+        runningGruntGulp:
+          text: Running Grunt/Gulp
+          relativeUrl: /screencasts.html#running-grunt-browsersync-and-compiling-scss-and-javascript
+        styleGuideMainNav:
+          text: Style Guide/Main Nav
+          relativeUrl: /screencasts.html#adding-scratchs-style-guide-and-main-navigation-menu
+        editingFonts:
+          text: Editing Fonts
+          relativeUrl: /screencasts.html#implementing-your-own-typography-with-scratch
+        editingColors:
+          text: Editing Colors
+          relativeUrl: /screencasts.html#implementing-your-own-color-scheme-with-scratch
+        rootFilesPermalinkStructure:
+          text: Root Files/Permalink Structure
+          relativeUrl: /screencasts.html#moving-the-right-files-to-the-root-of-your-site-amp-editing-the-permalink-structure
+    css:
+      text: CSS
+      relativeUrl: /css.html
+      children:
+        overview:
+          text: Overview
+          relativeUrl: /css.html#overview
+        iconFont:
+          text: Icon Font
+          relativeUrl: /css.html#ionicons-overview
+        soLongVendorPrefixes:
+          text: So Long, Vendor Prefixes!
+          relativeUrl: /css.html#autoprefixer
+        gridSystem:
+          text: Grid System
+          relativeUrl: /css.html#grid-system
+        typography:
+          text: Typography
+          relativeUrl: /css.html#typography
+        buttons:
+          text: Buttons
+          relativeUrl: /css.html#buttons
+        helperClasses:
+          text: Helper Classes
+          relativeUrl: /css.html#helper-classes
+        mixins:
+          text: Mixins
+          relativeUrl: /css.html#mixins
+    javascript:
+      text: JavaScript
+      relativeUrl: /javascript.html
+      children:
+        overview:
+          text: Overview
+          relativeUrl: /javascript.html#overview
+        modals:
+          text: Modals
+          relativeUrl: /javascript.html#modals-via-magnific-popup
+        waypoints:
+          text: Waypoints
+          relativeUrl: /javascript.html#jquery-waypoints
+        animations:
+          text: Animations
+          relativeUrl: /javascript.html#animations-with-velocityjs
+        sliders:
+          text: Sliders
+          relativeUrl: /javascript.html#sliders-via-glidejs
+    acf:
+      text: Advanced Custom Fields
+      relativeUrl: /acf.html
+      children:
+        layoutFunctions:
+          text: Layout Functions
+          relativeUrl: /acf.html#using-scratchs-layout-functions
+        layoutsPageTemplate:
+          text: Layouts Page Template
+          relativeUrl: /acf.html#layouts-page-template
+        html5AudioVideo:
+          text: HTML5 Audio/Video
+          relativeUrl: /acf.html#html5-audiovideo
+        imageGallery:
+          text: Image Gallery
+          relativeUrl: /acf.html#image-gallery-via
+        slider:
+          text: Slider
+          relativeUrl: /acf.html#slider-via

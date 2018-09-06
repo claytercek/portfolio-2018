@@ -1,0 +1,11 @@
+/********************PRINT********************/
+
+// hide content people who print don't need to see
+
+.sidebar,
+.page-navigation,
+.wp-prev-next,
+.respond-form,
+nav {
+  display: none;
+}
