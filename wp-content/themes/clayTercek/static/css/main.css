@@ -764,6 +764,86 @@ div.home {
       right: 2%;
       width: 60%;
       top: 5%; } }
+.experience {
+  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 600px;
+  margin: auto;
+  font-family: GTWalsheimPro, sans-serif; }
+  .experience .experienceItem {
+    padding: 2rem 0;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    position: relative; }
+    .experience .experienceItem::before {
+      content: "";
+      position: absolute;
+      left: -0.25rem;
+      top: 4rem;
+      width: 0.5rem;
+      height: 100%;
+      background-color: #0abac7; }
+    .experience .experienceItem:last-of-type::before {
+      background-image: linear-gradient(#0abac7, #f82aaa00);
+      height: 75%;
+      background-color: unset; }
+    .experience .experienceItem .dot {
+      flex-shrink: 0;
+      background-color: #0abac7;
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      top: 1rem;
+      border-radius: 100%;
+      transform: translateX(-50%);
+      transition: 0.2s ease-out; }
+    .experience .experienceItem .text {
+      margin-left: 1rem;
+      transform: initial;
+      transition: 0.2s ease-out; }
+    .experience .experienceItem h3 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin: 0; }
+      .experience .experienceItem h3 span {
+        font-weight: 500; }
+        .experience .experienceItem h3 span::after {
+          content: " -"; }
+    .experience .experienceItem h4 {
+      font-weight: 300 !important;
+      font-size: 1.3rem;
+      margin-top: 0.3rem;
+      margin-bottom: 0.6rem; }
+    .experience .experienceItem p {
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: 300; }
+    .experience .experienceItem:hover .dot {
+      background-color: white; }
+    .experience .experienceItem:hover .text {
+      transform: translateX(1rem); }
+
+@media screen and (max-width: 480px) {
+  .experience {
+    padding: 5rem 0.5rem 2rem 0.5rem; }
+    .experience .experienceItem::before {
+      left: -0.2rem;
+      width: 0.4rem; }
+    .experience .experienceItem h3 span {
+      font-size: 1.4rem;
+      display: block; }
+      .experience .experienceItem h3 span::after {
+        content: " " !important; }
+    .experience .experienceItem .text {
+      margin-left: 0.2rem; }
+    .experience .experienceItem .dot {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .experience .experienceItem h3,
+    .experience .experienceItem h4 {
+      font-size: 1.3rem; } }
 .admin-bar header {
   top: 32px !important; }
 

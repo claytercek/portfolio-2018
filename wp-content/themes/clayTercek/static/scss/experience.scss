@@ -1,0 +1,120 @@
+.experience {
+	padding-top: 8rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: 600px;
+	margin: auto;
+	font-family: GTWalsheimPro, sans-serif;
+
+	.experienceItem {
+		padding: 2rem 0;
+		display: flex;
+		color: white;
+		text-decoration: none;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -0.25rem;
+			top: 4rem;
+			width: 0.5rem;
+			height: 100%;
+			background-color: $blue;
+		}
+
+		&:last-of-type::before {
+			background-image: linear-gradient($blue, #f82aaa00);
+			height: 75%;
+			background-color: unset;
+		}
+
+		.dot {
+			flex-shrink: 0;
+			background-color: $blue;
+			width: 2rem;
+			height: 2rem;
+			position: relative;
+			top: 1rem;
+			border-radius: 100%;
+			transform: translateX(-50%);
+			transition: 0.2s ease-out;
+		}
+
+		.text {
+			margin-left: 1rem;
+			transform: initial;
+			transition: 0.2s ease-out;
+		}
+
+		h3 {
+			font-size: 1.6rem;
+			font-weight: 300;
+			margin: 0;
+			span {
+				font-weight: 500;
+
+				&::after {
+					content: " -";
+				}
+			}
+		}
+
+		h4 {
+			font-weight: 300 !important;
+			font-size: 1.3rem;
+			margin-top: 0.3rem;
+			margin-bottom: 0.6rem;
+		}
+
+		p {
+			margin: 0;
+			font-size: 1.125rem;
+			font-weight: 300;
+		}
+
+		&:hover {
+			.dot {
+				background-color: white;
+			}
+
+			.text {
+				transform: translateX(1rem);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.experience {
+		padding: 5rem 0.5rem 2rem 0.5rem;
+
+		.experienceItem {
+			&::before {
+				left: -0.2rem;
+				width: 0.4rem;
+			}
+			h3 span {
+				font-size: 1.4rem;
+				display: block;
+				&::after {
+					content: " " !important;
+				}
+			}
+
+			.text {
+				margin-left: 0.2rem;
+			}
+
+			.dot {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			h3,
+			h4 {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
