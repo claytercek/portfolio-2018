@@ -489,6 +489,8 @@ main.single {
       background-repeat: no-repeat;
       background-size: 100% 40%;
       background-position: -2% 90%; }
+    main.single .mainInfo img {
+      height: auto; }
   main.single .bodyText {
     width: 700px; }
     main.single .bodyText h2 {

@@ -34,9 +34,9 @@
 			</ul>
 
 			<div class="links">
-				<a href="<?php the_field('url'); ?>">Launch Site</a>
+				<a href="<?php the_field('url'); ?>" target="_blank">Launch Site</a>
 				<?php if( get_field('code_url')): ?>
-					<a href="<?php the_field('code_url'); ?>">View Code</a>
+					<a href="<?php the_field('code_url'); ?>" target="_blank">View Code</a>
 				<?php endif; ?>
 			</div>
 		</div>
