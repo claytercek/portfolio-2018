@@ -25,7 +25,7 @@ get_header(); ?>
 							if (has_post_thumbnail()) {
 							the_post_thumbnail('portfolio-thumb');
 							} else {
-								echo '<img src="https://placehold.it/450x450/f69/fff" alt="">' ;
+								echo '<img src="https://placehold.it/576x448/f69/fff" alt="">' ;
 							}
 							
 							?>

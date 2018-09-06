@@ -129,4 +129,4 @@ function my_acf_json_load_point( $paths ) {
     
 }
 
-add_image_size( 'portfolio-thumb', 450,450 );
+add_image_size( 'portfolio-thumb', 576,448 );

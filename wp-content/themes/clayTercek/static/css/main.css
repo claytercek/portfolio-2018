@@ -211,7 +211,7 @@ main.portfolio {
     width: 80%;
     padding-top: 80%;
     background-color: #7225a0;
-    opacity: 0.5;
+    opacity: 1;
     left: 50%;
     border-radius: 100%;
     z-index: -5;
@@ -239,7 +239,7 @@ main.portfolio {
       position: relative;
       margin: 0;
       padding: 0.5rem 0;
-      background-image: linear-gradient(120deg, #f82aaa 0%, #f82aaa 100%);
+      background-image: linear-gradient(120deg, #231549 0%, #231549 100%);
       background-repeat: no-repeat;
       background-size: 0 32%;
       background-position: 0 75%;
@@ -247,22 +247,21 @@ main.portfolio {
       z-index: 2; }
     main.portfolio article .imgWrapper {
       position: absolute;
-      width: 70%;
+      width: 90%;
       padding-top: 70%;
-      left: 50%;
+      left: 5%;
       top: 50%;
-      border-radius: 100%;
       z-index: 0;
       overflow: hidden;
-      transform: translate(-50%, -50%);
+      transform: translate(0%, -50%);
       pointer-events: none; }
       main.portfolio article .imgWrapper img {
         position: absolute;
-        margin: auto;
         top: 100%;
-        right: 0;
-        width: 100%;
+        left: 50%;
         height: 100%;
+        width: auto;
+        transform: translateX(-50%);
         transition: all 0.3s 0s ease-out;
         opacity: 0.3; }
   main.portfolio article.hover .imgWrapper img {
@@ -279,6 +278,7 @@ main.portfolio {
     opacity: 1;
     color: #f82aaa;
     z-index: 3;
+    font-weight: 500;
     transition: all 0.3s ease-out; }
   main.portfolio article.hover::before,
   main.portfolio article.notHover::before {
