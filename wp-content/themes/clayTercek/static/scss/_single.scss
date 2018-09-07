@@ -2,7 +2,7 @@ main.single {
 	padding-top: 10rem;
 	padding-bottom: 4rem;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	margin: auto;
 	max-width: 980px;
 	color: $white;
@@ -17,12 +17,12 @@ main.single {
 			color: $white;
 			position: relative;
 			display: inline;
-			background-image: linear-gradient(120deg, $pink 0%, $pink 100%);
-			background-repeat: no-repeat;
-			background-size: 100% 40%;
-			background-position: -2% 90%;
+			// background-image: linear-gradient(120deg, $pink 0%, $pink 100%);
+			// background-repeat: no-repeat;
+			// background-size: 100% 40%;
+			// background-position: -2% 90%;
 		}
-		margin-left: 5rem;
+		margin-right: 5rem;
 
 		img {
 			height: auto;

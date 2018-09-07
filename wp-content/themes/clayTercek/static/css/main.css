@@ -471,7 +471,7 @@ main.single {
   padding-top: 10rem;
   padding-bottom: 4rem;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin: auto;
   max-width: 980px;
   color: #fff;
@@ -479,16 +479,12 @@ main.single {
   font-family: GTWalsheimPro, sans-serif; }
   main.single .mainInfo {
     text-align: right;
-    margin-left: 5rem; }
+    margin-right: 5rem; }
     main.single .mainInfo h1 {
       margin: 0;
       color: #fff;
       position: relative;
-      display: inline;
-      background-image: linear-gradient(120deg, #f82aaa 0%, #f82aaa 100%);
-      background-repeat: no-repeat;
-      background-size: 100% 40%;
-      background-position: -2% 90%; }
+      display: inline; }
     main.single .mainInfo img {
       height: auto; }
   main.single .bodyText {
