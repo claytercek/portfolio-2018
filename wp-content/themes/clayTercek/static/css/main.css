@@ -576,7 +576,10 @@ main.single {
       margin: 0;
       text-align: left; }
       main.single .mainInfo img {
-        margin: 2rem 0; }
+        margin-bottom: 2rem;
+        margin-top: 1.5rem; }
+      main.single .mainInfo h1 {
+        background: none; }
     main.single .bodyText {
       width: 100%; }
     main.single div.controls {

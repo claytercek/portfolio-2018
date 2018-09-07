@@ -139,7 +139,12 @@ main.single {
 			margin: 0;
 			text-align: left;
 			img {
-				margin: 2rem 0;
+				margin-bottom: 2rem;
+				margin-top: 1.5rem;
+			}
+
+			h1 {
+				background: none;
 			}
 		}
 
