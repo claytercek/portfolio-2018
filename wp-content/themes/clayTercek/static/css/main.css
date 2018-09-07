@@ -384,7 +384,7 @@ header {
     margin: 0;
     opacity: 1;
     bottom: 0; }
-  header .current_page_item::after {
+  header .current-menu-item::after {
     content: "";
     width: 90%;
     height: 6px;
