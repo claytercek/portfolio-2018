@@ -449,11 +449,11 @@ header #overlay {
     header #overlay a * {
       transform: translateY(3rem);
       transition: 0.3s ease; }
-  header #overlay .current_page_item::after {
+  header #overlay .current-menu-item::after {
     transform: translateY(3rem);
     transition: 0.3s ease; }
   header #overlay .showOverlayLinks,
-  header #overlay .current_page_item.changed::after {
+  header #overlay .current-menu-item.changed::after {
     transform: translateY(0%); }
 
 @media screen and (min-width: 768px) {
@@ -522,17 +522,8 @@ main.single {
         display: inline;
         position: relative;
         font-size: 1.3rem;
-        font-weight: 400;
-        color: #fff; }
-        main.single .bodyText ul h3::after {
-          content: " ";
-          position: absolute;
-          width: 95%;
-          left: -0.2rem;
-          bottom: 5%;
-          height: 40%;
-          background-color: #f82aaa;
-          z-index: -1; }
+        font-weight: 500;
+        color: #f82aaa; }
       main.single .bodyText ul li::before {
         display: none; }
     main.single .bodyText a {
@@ -553,13 +544,17 @@ main.single {
       main.single .bodyText a:active {
         background-color: #e70893; }
   main.single div.controls a {
-    display: block;
+    display: flex;
     float: right;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    margin-left: 1rem;
-    margin-top: 1rem; }
+    margin-bottom: 1rem; }
+    main.single div.controls a[rel~="next"] {
+      float: left; }
+    main.single div.controls a img {
+      width: 5rem;
+      margin: 0; }
 
 @media screen and (max-width: 768px) {
   main.single {
@@ -578,6 +573,8 @@ main.single {
         background: none; }
     main.single .bodyText {
       width: 100%; }
+      main.single .bodyText div.links {
+        min-width: 0; }
     main.single div.controls {
       position: fixed;
       height: 3rem;
@@ -590,14 +587,21 @@ main.single {
       padding-bottom: 1rem; }
       main.single div.controls a[rel~="prev"] {
         position: absolute;
-        right: 2rem;
+        right: 1.5rem;
         bottom: 0.6rem;
         margin: 0; }
       main.single div.controls a[rel~="next"] {
         position: absolute;
-        left: 2rem;
+        left: 1.5rem;
         bottom: 0.6rem;
         margin: 0; } }
+@media (min-width: 960px) {
+  .controls a[rel~="prev"]::before {
+    content: "previous project";
+    margin-right: 0.5rem; }
+  .controls a[rel~="next"]::after {
+    content: "next project";
+    margin-left: 0.5rem; } }
 main.search {
   padding-bottom: 2rem;
   max-width: 40rem;

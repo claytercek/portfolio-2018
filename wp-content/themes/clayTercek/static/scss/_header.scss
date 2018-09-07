@@ -169,13 +169,13 @@ header #overlay {
 		}
 	}
 
-	.current_page_item::after {
+	.current-menu-item::after {
 		transform: translateY(3rem);
 		transition: 0.3s ease;
 	}
 
 	.showOverlayLinks,
-	.current_page_item.changed::after {
+	.current-menu-item.changed::after {
 		transform: translateY(0%);
 	}
 }

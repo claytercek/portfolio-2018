@@ -4,6 +4,10 @@
 	<main class="single">
 		
 		<div class="mainInfo">
+			<div class="controls">
+				<?php previous_post_link('%link', '<img src="' . get_template_directory_uri() . '/static/imgs/ArrowRight.svg" alt="ArrowRight">', FALSE); ?>
+				<?php next_post_link('%link', '<img src="' . get_template_directory_uri() . '/static/imgs/ArrowLeft.svg" alt="ArrowLeft">', FALSE); ?>
+			</div>
 			<?php 
 			if (has_post_thumbnail()) {
 				the_post_thumbnail('large');
@@ -11,10 +15,6 @@
 				echo '<img src="https://placehold.it/576x448/f69/fff" alt="">' ;
 			}?>
 			<h1><?php the_title(); ?></h1>
-			<div class="controls">
-				<?php previous_post_link('%link', 'next project', FALSE); ?>
-				<?php next_post_link('%link', 'previous project', FALSE); ?>
-			</div>
 			
 		</div>
 
