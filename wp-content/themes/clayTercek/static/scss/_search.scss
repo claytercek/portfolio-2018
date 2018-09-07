@@ -6,10 +6,42 @@ main.search {
 	font-weight: 300;
 	color: white;
 
-	h1 {
-		color: white;
-		margin: 0;
-		margin-bottom: 3rem;
+	form div {
+		label::after {
+			content: "";
+			width: 80px;
+			height: 6px;
+			left: 0;
+			position: absolute;
+			bottom: -0.9rem;
+			background: url("../imgs/underline-01.svg") repeat-x;
+		}
+
+		label {
+			position: relative;
+			color: white;
+			font-weight: 300;
+			margin: 2rem 0;
+			font-size: 1.6rem;
+			display: block;
+		}
+
+		input:first-of-type {
+			display: block;
+			margin: 0;
+			margin-top: 1rem;
+			color: white;
+			margin-bottom: 3rem;
+			background: none;
+			font-size: 1.6rem;
+			padding: 0.5rem 1rem;
+			border: 1px solid $pink;
+			border-radius: 2rem;
+		}
+
+		input:last-of-type {
+			display: none;
+		}
 	}
 
 	h2::after {
@@ -66,9 +98,16 @@ main.search {
 			margin: 0.5rem;
 		}
 		h5 {
-			margin: 0.5rem;
 			font-size: 1.125rem;
 			font-weight: 200;
+			margin: 0.5rem;
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			margin: 0;
 		}
 
 		.active {

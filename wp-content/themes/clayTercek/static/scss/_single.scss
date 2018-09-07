@@ -1,6 +1,6 @@
 main.single {
 	padding-top: 10rem;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
 	display: flex;
 	flex-direction: row-reverse;
 	margin: auto;
@@ -130,7 +130,7 @@ main.single {
 
 @media screen and (max-width: 768px) {
 	main.single {
-		padding-top: 5rem;
+		padding-top: 6rem;
 		flex-direction: column;
 		.mainInfo {
 			display: flex;

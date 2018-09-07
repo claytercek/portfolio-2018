@@ -469,7 +469,7 @@ header #overlay {
     opacity: 0; } }
 main.single {
   padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
@@ -567,7 +567,7 @@ main.single {
 
 @media screen and (max-width: 768px) {
   main.single {
-    padding-top: 5rem;
+    padding-top: 6rem;
     flex-direction: column; }
     main.single .mainInfo {
       display: flex;
@@ -609,10 +609,34 @@ main.search {
   font-family: GTWalsheimPro, sans-serif;
   font-weight: 300;
   color: white; }
-  main.search h1 {
+  main.search form div label::after {
+    content: "";
+    width: 80px;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    bottom: -0.9rem;
+    background: url("../imgs/underline-01.svg") repeat-x; }
+  main.search form div label {
+    position: relative;
     color: white;
+    font-weight: 300;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    display: block; }
+  main.search form div input:first-of-type {
+    display: block;
     margin: 0;
-    margin-bottom: 3rem; }
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 3rem;
+    background: none;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f82aaa;
+    border-radius: 2rem; }
+  main.search form div input:last-of-type {
+    display: none; }
   main.search h2::after {
     content: "";
     width: 80px;
@@ -655,9 +679,14 @@ main.search {
       width: 60px;
       margin: 0.5rem; }
     main.search .page h5 {
-      margin: 0.5rem;
       font-size: 1.125rem;
-      font-weight: 200; }
+      font-weight: 200;
+      margin: 0.5rem; }
+    main.search .page a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin: 0; }
     main.search .page .active {
       color: #0abac7; }
 

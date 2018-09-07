@@ -23,6 +23,8 @@
 		$title = "Clay Tercek | " . get_the_title();
 	} if (is_post_type_archive()) {
 		$title = "Clay Tercek | " . post_type_archive_title('',false);
+	} if (is_search()) {
+		$title = "Clay Tercek | Search: " . get_search_query();
 	}
 	?>
 	<title><?php echo $title;?></title>
@@ -42,10 +44,12 @@
 				'depth' => 0,
 				'theme_location' => 'main',
 				'link_before' => '<h2>',
-				'link_after' => '</h2>',
+				'link_after' => '</h2>'
 			);
 			wp_nav_menu($menuParameters);
 		?>
+
+		
 
 		<img class="menuIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/menuIcon.svg" alt="menu">
 
@@ -62,4 +66,5 @@
 			?>
 		</div>
 		<img class="closeIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/exitIcon.svg" alt="exit">
+
 	</header>
