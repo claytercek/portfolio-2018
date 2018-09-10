@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	var previousArticle = null;
 
-	$("article").hover(
+	$("main.portfolio article").hover(
 		//ON HOVER
 		function() {
 			$(this).addClass("hover");

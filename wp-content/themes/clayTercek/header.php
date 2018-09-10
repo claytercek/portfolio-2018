@@ -31,7 +31,7 @@
 	<?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="main">
 	<header>
 		<div class="bg"></div>
 		<a id="logo" href="<?php echo get_home_url()  ?>">

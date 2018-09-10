@@ -26,7 +26,6 @@ jQuery(document).ready(function($) {
 		});
 
 		function blink() {
-			console.log("blink");
 			// $("#MASK").attr("transform", "matrix(1, 0, 0, .5, 0, 58.8)");
 			$("#MASK, #lidShadow").animate(
 				{ sy: 0 },

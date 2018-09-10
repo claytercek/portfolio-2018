@@ -32,7 +32,7 @@ main.portfolio {
 		position: absolute;
 		max-width: 40rem;
 		width: 100%;
-		top: 46%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 2;
@@ -145,8 +145,16 @@ main.portfolio {
 		}
 
 		article.hover {
-			.imgWrapper {
+			.imgWrapper img {
 				opacity: 0;
+			}
+			a {
+				background-size: 100% 20%;
+			}
+		}
+		article.notHover {
+			a {
+				opacity: 1;
 			}
 		}
 

@@ -43,28 +43,33 @@
   box-sizing: border-box; }
 
 html {
-  background-color: #231549; }
+  background-color: #231549;
+  min-height: 100%; }
 
 body {
   margin: 0 auto !important;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0;
   left: 0; }
 
 div.content {
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 90%;
-  height: 100%;
-  max-width: 1296px; }
+  min-height: 100%;
+  max-width: 1296px;
+  display: flex; }
 
 main {
   padding-top: 6rem;
   padding-bottom: 2rem;
   width: 100%;
-  min-height: 100%; }
+  min-height: 100% !important; }
 
 article {
   max-width: 720px;
@@ -221,7 +226,7 @@ main.portfolio {
     position: absolute;
     max-width: 40rem;
     width: 100%;
-    top: 46%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; }
@@ -305,8 +310,12 @@ main.portfolio {
         background-position: 0 70%; }
       main.portfolio article .imgWrapper img {
         display: none; }
-    main.portfolio article.hover .imgWrapper {
+    main.portfolio article.hover .imgWrapper img {
       opacity: 0; }
+    main.portfolio article.hover a {
+      background-size: 100% 20%; }
+    main.portfolio article.notHover a {
+      opacity: 1; }
     main.portfolio article::before {
       display: none; }
     main.portfolio .circle {
@@ -349,7 +358,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    height: 4rem; }
+    height: 6rem; }
   header > ul {
     display: none; }
   header h2 {
@@ -468,7 +477,7 @@ header #overlay {
     top: -3rem;
     opacity: 0; } }
 main.single {
-  padding-top: 10rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
   flex-direction: row;
@@ -881,5 +890,8 @@ div.home {
       font-size: 1.3rem; } }
 .admin-bar header {
   top: 32px !important; }
+
+#main {
+  min-height: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
