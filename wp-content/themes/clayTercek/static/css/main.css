@@ -892,6 +892,7 @@ div.home {
   top: 32px !important; }
 
 #main {
-  min-height: 100% !important; }
+  min-height: 100% !important;
+  height: unset !important; }
 
 /*# sourceMappingURL=main.css.map */

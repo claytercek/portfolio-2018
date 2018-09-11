@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 		addBlacklistClass();
 
 		var settings = {
-			anchors: "a",
+			anchors: "a[target!='_blank']",
 			blacklist: ".wp-link",
 			onAfter: function() {
 				addBlacklistClass();
