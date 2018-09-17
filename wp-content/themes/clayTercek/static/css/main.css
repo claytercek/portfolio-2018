@@ -211,17 +211,6 @@ main.portfolio {
   position: absolute;
   top: 0;
   bottom: 0; }
-  main.portfolio .circle {
-    position: absolute;
-    width: 80%;
-    padding-top: 80%;
-    background-color: #7225a0;
-    opacity: 0.5;
-    left: 50%;
-    border-radius: 100%;
-    z-index: -5;
-    top: 50%;
-    transform: translate(-50%, -50%); }
   main.portfolio .text {
     position: absolute;
     max-width: 40rem;
@@ -289,6 +278,12 @@ main.portfolio {
     opacity: 0.3; }
 
 @media screen and (max-width: 768px) {
+  .circle {
+    position: fixed;
+    top: 50%;
+    width: 120%;
+    padding-top: 120%; }
+
   main.portfolio {
     padding: 4rem 0rem;
     text-align: left; }
@@ -317,20 +312,16 @@ main.portfolio {
     main.portfolio article.notHover a {
       opacity: 1; }
     main.portfolio article::before {
-      display: none; }
-    main.portfolio .circle {
-      position: fixed;
-      top: 50%;
-      width: 120%;
-      padding-top: 120%; } }
+      display: none; } }
 @media screen and (max-width: 768px) and (min-width: 480px) {
+  .circle {
+    width: 500px;
+    padding-top: 500px; }
+
   main.portfolio .text {
     margin: auto; }
   main.portfolio article {
-    font-size: 2rem; }
-  main.portfolio .circle {
-    width: 500px;
-    padding-top: 500px; } }
+    font-size: 2rem; } }
 header {
   position: fixed;
   top: 0;
@@ -922,5 +913,17 @@ div.home {
 #main.is-exiting .content {
   top: 20%;
   opacity: 0; }
+
+.circle {
+  position: fixed;
+  width: 620px;
+  height: 620px;
+  background-color: #7225a0;
+  opacity: 0.5;
+  left: 50%;
+  border-radius: 100%;
+  z-index: -5;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */

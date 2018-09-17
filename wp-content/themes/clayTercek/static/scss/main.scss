@@ -74,3 +74,16 @@ main {
 	top: 20%;
 	opacity: 0;
 }
+
+.circle {
+	position: fixed;
+	width: 620px;
+	height: 620px;
+	background-color: $lightPurple;
+	opacity: 0.5;
+	left: 50%;
+	border-radius: 100%;
+	z-index: -5;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

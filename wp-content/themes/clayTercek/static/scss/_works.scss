@@ -15,19 +15,6 @@ main.portfolio {
 	top: 0;
 	bottom: 0;
 
-	.circle {
-		position: absolute;
-		width: 80%;
-		padding-top: 80%;
-		background-color: $lightPurple;
-		opacity: 0.5;
-		left: 50%;
-		border-radius: 100%;
-		z-index: -5;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-
 	.text {
 		position: absolute;
 		max-width: 40rem;
@@ -115,6 +102,12 @@ main.portfolio {
 }
 
 @media screen and (max-width: 768px) {
+	.circle {
+		position: fixed;
+		top: 50%;
+		width: 120%;
+		padding-top: 120%;
+	}
 	main.portfolio {
 		padding: 4rem 0rem;
 
@@ -161,28 +154,20 @@ main.portfolio {
 		article::before {
 			display: none;
 		}
-
-		.circle {
-			position: fixed;
-			top: 50%;
-			width: 120%;
-			padding-top: 120%;
-		}
 	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
+	.circle {
+		width: 500px;
+		padding-top: 500px;
+	}
 	main.portfolio {
 		.text {
 			margin: auto;
 		}
 		article {
 			font-size: 2rem;
-		}
-
-		.circle {
-			width: 500px;
-			padding-top: 500px;
 		}
 	}
 }

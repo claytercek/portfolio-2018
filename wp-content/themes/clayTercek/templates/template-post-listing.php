@@ -33,7 +33,6 @@ get_header(); ?>
 				</article>
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>
-				<div class="circle"></div>
 			</div>
 		</main>
 		<?php endif; ?>

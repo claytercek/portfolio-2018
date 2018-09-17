@@ -31,7 +31,6 @@ jQuery(document).ready(function($) {
 				render: function($container) {
 					closeMenu();
 					// Restart your animation
-					lottie.setQuality("low");
 					anim.setSpeed(1.5);
 					anim.playSegments([1, 30], true);
 					// smoothState.restartCSSAnimations();

@@ -32,6 +32,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div class="circle"></div>
 	<script type="text/javascript">
 	// for ajax
 	var templateUrl = '<?= get_bloginfo("template_url"); ?>';
@@ -77,3 +78,4 @@
 		<img class="closeIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/exitIcon.svg" alt="exit" onClick="closeMenu()">
 
 	</header>
+	
