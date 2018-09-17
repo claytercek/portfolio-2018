@@ -43,10 +43,10 @@ jQuery(document).ready(function($) {
 	var overlayItems = overlay.find("a  *");
 	var activeItem = overlay.find(".current-menu-item");
 	window.openMenu = function() {
-		var overlay = $("header #overlay");
-		var closeIcon = $("header  .closeIcon");
-		var overlayItems = overlay.find("a  *");
-		var activeItem = overlay.find(".current-menu-item");
+		overlay = $("header #overlay");
+		closeIcon = $("header  .closeIcon");
+		overlayItems = overlay.find("a  *");
+		activeItem = overlay.find(".current-menu-item");
 		overlay.css("display", "flex");
 		menuIcon.hide();
 		closeIcon.show();
