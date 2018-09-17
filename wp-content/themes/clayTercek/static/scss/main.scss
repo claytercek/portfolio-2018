@@ -62,4 +62,15 @@ main {
 #main {
 	min-height: 100% !important;
 	height: unset !important;
+	width: 100%;
+
+	.content {
+		opacity: 1;
+		transition: all 0.3s ease;
+	}
+}
+
+#main.is-exiting .content {
+	top: 20%;
+	opacity: 0;
 }

@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 
 	const NavItems = $("header > ul > .menu-item");
 	const SearchLink = $("header #search").first();
-	const menuIcon = $("header .menuIcon").first();
+	const menuIcon = $("header .menuIcon");
 	const hideNav = () => {
 		var count;
 		NavItems.each(function(index) {
@@ -38,43 +38,36 @@ jQuery(document).ready(function($) {
 			e.stopPropagation();
 		}
 	});
-
-	const overlay = $("header #overlay").first();
-	const closeIcon = $("header  .closeIcon").first();
-	const overlayItems = overlay.find("a  *");
-	const activeItem = overlay.find(".current_page_item");
-	menuIcon.click(function() {
-		openMenu();
-	});
-	closeIcon.click(function() {
-		closeMenu();
-	});
-	overlay.click(function() {
-		closeMenu();
-	});
-
-	function openMenu() {
+	var overlay;
+	var closeIcon;
+	var overlayItems;
+	var activeItem;
+	window.openMenu = function() {
+		overlay = $("header #overlay");
+		closeIcon = $("header  .closeIcon");
+		overlayItems = overlay.find("a  *");
+		activeItem = overlay.find(".current-menu-item");
 		overlay.css("display", "flex");
 		menuIcon.hide();
 		closeIcon.show();
 
-		var activeIndex = activeItem.index() - 1;
-		activeItem.css("transition-delay", activeIndex * 0.1 + "s");
-
+		var activeIndex = activeItem.index();
 		overlayItems.each(function(i) {
 			$(this).css("transition-delay", i * 0.1 + "s");
 		});
 		window.setTimeout(function() {
 			overlayItems.toggleClass("showOverlayLinks");
-			activeItem.toggleClass("changed");
 		}, 50);
-	}
+		window.setTimeout(function() {
+			activeItem.toggleClass("changed");
+		}, 100 * activeIndex + 100);
+	};
 
-	function closeMenu() {
+	window.closeMenu = function() {
 		overlayItems.toggleClass("showOverlayLinks");
 		activeItem.toggleClass("changed");
 		overlay.hide(0);
 		menuIcon.show();
 		closeIcon.hide();
-	}
+	};
 });

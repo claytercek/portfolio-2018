@@ -79,6 +79,20 @@ header {
 		flex-grow: 1;
 		margin: 0;
 		font-size: 1.2rem;
+
+		a {
+			font-weight: 500;
+			font-size: 1.2rem;
+			display: inline;
+
+			h2 {
+				font-weight: 500;
+				// margin: 0;
+				margin-top: 1.1rem;
+				font-size: 1.2rem;
+				display: inline-block;
+			}
+		}
 	}
 	#search {
 		transition: 0.4s ease;
@@ -90,13 +104,18 @@ header {
 	}
 
 	.current-menu-item::after {
-		content: "";
 		width: 90%;
-		height: 6px;
 		left: 5%;
+	}
+	li::after {
+		content: "";
+		width: 0;
+		height: 6px;
+		left: 50%;
 		position: absolute;
 		bottom: 0.5rem;
 		background: url("../imgs/underline-01.svg") repeat-x;
+		transition: all 0.2s ease;
 	}
 }
 
@@ -196,4 +215,12 @@ header #overlay {
 		top: -3rem;
 		opacity: 0;
 	}
+}
+
+#animationContainer {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1 !important;
+	pointer-events: none;
 }

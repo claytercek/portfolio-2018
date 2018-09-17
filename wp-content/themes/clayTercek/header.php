@@ -31,12 +31,21 @@
 	<?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?> id="main">
+<body <?php body_class(); ?>>
+	<script type="text/javascript">
+	// for ajax
+	var templateUrl = '<?= get_bloginfo("template_url"); ?>';
+	</script>
+
+	<div id="animationContainer"></div>
+	<div id="main">
 	<header>
 		<div class="bg"></div>
-		<a id="logo" href="<?php echo get_home_url()  ?>">
-			<h2>Clay Tercek</h2>
-		</a>
+		<div id="logo">
+			<a href="<?php echo get_home_url()  ?>">
+				<h2>Clay Tercek</h2>
+			</a>
+		</div>
 
 		<?php
 			$menuParameters = array(
@@ -51,9 +60,9 @@
 
 		
 
-		<img class="menuIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/menuIcon.svg" alt="menu">
+		<img class="menuIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/menuIcon.svg" alt="menu" onClick="openMenu()">
 
-		<div id="overlay">
+		<div id="overlay" onClick="closeMenu()">
 			<?php
 				$menuParameters = array(
 					'container' => false,
@@ -65,6 +74,6 @@
 				wp_nav_menu($menuParameters);
 			?>
 		</div>
-		<img class="closeIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/exitIcon.svg" alt="exit">
+		<img class="closeIcon" src="<?php echo get_template_directory_uri() ?>/static/imgs/exitIcon.svg" alt="exit" onClick="closeMenu()">
 
 	</header>

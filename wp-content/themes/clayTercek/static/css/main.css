@@ -386,6 +386,15 @@ header {
     flex-grow: 1;
     margin: 0;
     font-size: 1.2rem; }
+    header #logo a {
+      font-weight: 500;
+      font-size: 1.2rem;
+      display: inline; }
+      header #logo a h2 {
+        font-weight: 500;
+        margin-top: 1.1rem;
+        font-size: 1.2rem;
+        display: inline-block; }
   header #search {
     transition: 0.4s ease;
     flex-grow: 1;
@@ -394,13 +403,17 @@ header {
     opacity: 1;
     bottom: 0; }
   header .current-menu-item::after {
-    content: "";
     width: 90%;
+    left: 5%; }
+  header li::after {
+    content: "";
+    width: 0;
     height: 6px;
-    left: 5%;
+    left: 50%;
     position: absolute;
     bottom: 0.5rem;
-    background: url("../imgs/underline-01.svg") repeat-x; }
+    background: url("../imgs/underline-01.svg") repeat-x;
+    transition: all 0.2s ease; }
 
 .menuIcon {
   position: absolute;
@@ -476,6 +489,13 @@ header #overlay {
   .menuIcon {
     top: -3rem;
     opacity: 0; } }
+#animationContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1 !important;
+  pointer-events: none; }
+
 main.single {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -893,6 +913,14 @@ div.home {
 
 #main {
   min-height: 100% !important;
-  height: unset !important; }
+  height: unset !important;
+  width: 100%; }
+  #main .content {
+    opacity: 1;
+    transition: all 0.3s ease; }
+
+#main.is-exiting .content {
+  top: 20%;
+  opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
