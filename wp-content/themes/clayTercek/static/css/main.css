@@ -278,12 +278,6 @@ main.portfolio {
     opacity: 0.3; }
 
 @media screen and (max-width: 768px) {
-  .circle {
-    position: fixed;
-    top: 50%;
-    width: 120%;
-    padding-top: 120%; }
-
   main.portfolio {
     padding: 4rem 0rem;
     text-align: left; }
@@ -314,10 +308,6 @@ main.portfolio {
     main.portfolio article::before {
       display: none; } }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .circle {
-    width: 500px;
-    padding-top: 500px; }
-
   main.portfolio .text {
     margin: auto; }
   main.portfolio article {
@@ -925,5 +915,10 @@ div.home {
   z-index: -5;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+@media (max-width: 480px) {
+  .circle {
+    width: 500px;
+    height: 500px; } }
 
 /*# sourceMappingURL=main.css.map */
