@@ -21,7 +21,7 @@
 		<div class="bodyText">
 			<h2>Challenge</h2>
 			<?php the_field('challenge'); ?>
-			<h2>Answer</h2>
+			<h2>Solution</h2>
 			<?php the_field('answer'); ?>
 			<ul>
 				<li><h3>Deliverables:</h3> <?php the_field('deliverables'); ?></li>
