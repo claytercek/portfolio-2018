@@ -62,5 +62,6 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 // Include other functions in "includes" folder
 require_once(__DIR__ . '/includes/experience.php'); //create custom post type
+require_once(__DIR__ . '/includes/videos.php'); //create 2nd custom post type
 require_once(__DIR__ . '/includes/ACF.php'); //deploy with ACF
 require_once(__DIR__ . '/includes/pagination.php'); //pagination functions for search page
